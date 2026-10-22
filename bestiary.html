@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bestiary | Oath Rift Online</title>
+<meta name="description" content="Every monster in Oath Rift Online: where it lives, how it fights, what it drops, and how to defeat the Shadow Planta and the Flower Dryad.">
+<meta property="og:title" content="Bestiary | Oath Rift Online">
+<meta property="og:description" content="Every monster in Oath Rift Online: where it lives, how it fights, what it drops, and how to defeat the Shadow Planta and the Flower Dryad.">
+<meta property="og:image" content="assets/img/brand/splash.jpg">
+<link rel="icon" href="assets/img/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Noto+Serif+JP:wght@700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container">
+  <a class="brand" href="index.html"><img src="assets/img/brand/wordmark.png" alt="Oath Rift Online" width="520" height="167"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="story.html">Story</a>
+    <a href="world.html">World</a>
+    <a href="bestiary.html">Bestiary</a>
+    <a href="skills.html">Skill Trees</a>
+    <a href="builds.html">Builds</a>
+    <a href="gear.html">Gear</a>
+    <a href="guide.html">How to Play</a>
+    <a class="btn btn-gold btn-sm" href="guide.html#start">Start Playing</a>
+  </nav>
+</div></header>
+
+<main id="main">
+  <section class="page-hero" data-realm="demon">
+    <div class="bg banner" style="background-image: url('assets/img/banners/bestiary.jpg');"></div>
+    <span class="kanji" aria-hidden="true">魔物</span>
+    <div class="container">
+      <p class="eyebrow">Monster codex</p>
+      <h1>Bestiary</h1>
+      <p class="lead">The Rifts have filled the Island's monsters with mana they were never meant to carry. Learn how each one behaves before you raise your blade.</p>
+      <div class="toc" style="margin-top: 22px;">
+        <a href="#temperament">Temperaments</a><a href="#bosses">Bosses</a><a href="#codex">All monsters</a><a href="#rift">Rift monsters</a><a href="#tips">Combat tips</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="temperament">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Read the room</p>
+        <h2>Monster temperaments</h2>
+        <p class="lead">Every monster has a temperament that decides when it fights.</p>
+        <div class="divider"><span></span></div>
+      </div>
+      <div class="grid grid-4">
+        <div class="window reveal"><span class="badge">Curious</span><h3 style="margin-top: 10px;">Curious</h3><p class="muted">Watches you with interest but only fights back once you attack it. Safe to walk past.</p></div>
+        <div class="window reveal"><span class="badge celestial">Coward</span><h3 style="margin-top: 10px;">Coward</h3><p class="muted">Runs away when you approach. Land a hit and it turns to fight.</p></div>
+        <div class="window reveal"><span class="badge crimson">Threatening</span><h3 style="margin-top: 10px;">Threatening</h3><p class="muted">Attacks on sight. Give it a wide berth if you are not ready.</p></div>
+        <div class="window reveal"><span class="badge demon">Hunting</span><h3 style="margin-top: 10px;">Hunting</h3><p class="muted">Roams the land and tracks adventurers by the traces they leave. It will find you.</p></div>
+      </div>
+      <div class="callout reveal" style="margin-top: 26px;">
+        <span class="mark">精</span>
+        <div>
+          <h4>Elite monsters</h4>
+          <p>Now and then a monster spawns as an <strong>Elite</strong>. Elites are tougher and hit harder, but give more experience and coins and drop loot more often. Rift bosses are never Elite; they are dangerous enough already.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="bosses">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Know your enemy</p>
+        <h2>Bosses</h2>
+        <div class="divider"><span></span></div>
+      </div>
+
+      <article class="boss reveal" data-realm="normal" style="--accent: var(--normal); --accent-soft: rgba(143, 220, 118, 0.18);">
+        <div class="art" style="background-image: radial-gradient(closest-side, rgba(90, 40, 140, 0.4), transparent), linear-gradient(160deg, #10241a, #070414);">
+          <img src="assets/img/monsters/shadow-planta.png" alt="Shadow Planta" loading="lazy">
+        </div>
+        <div class="info">
+          <div class="badges"><span class="badge normal">Field boss</span><span class="badge">Lv 15</span><span class="badge">Southern Plains</span></div>
+          <h3 style="font-size: 1.8rem;">Shadow Planta</h3>
+          <div class="hpbar" aria-hidden="true"><span></span></div>
+          <p>Each Planta camp on the plains is ruled by a Shadow Planta, surrounded by six Planta Slaves. It begins merely curious, lashing out with shadowy vines and bursts of gloom only when provoked.</p>
+          <ul class="phases">
+            <li style="--c: var(--normal);"><span class="ph">Calm</span><span>While its Slaves still stand, it waits in the camp and only fights if attacked.</span></li>
+            <li style="--c: var(--crimson);"><span class="ph">Enraged</span><span>Cut down enough of its Slaves and it turns <strong>Hunting</strong>: it leaves the camp and comes for you.</span></li>
+          </ul>
+          <p style="margin-top: 16px;"><strong>Always drops:</strong> a Shadow Petal, wanted for a quest.<br><span class="muted">Tip: pull the Slaves one at a time and be ready for the boss to come looking once the camp thins out.</span></p>
+        </div>
+      </article>
+
+      <article class="boss reveal" id="dryad" data-realm="demon">
+        <div class="art" style="background-image: linear-gradient(90deg, transparent 60%, var(--panel-solid)), url('assets/img/art/flower-dryad.jpg'), radial-gradient(closest-side, rgba(176, 103, 255, 0.35), transparent), linear-gradient(160deg, #24104a, #070414);">
+          <img src="assets/img/monsters/flower-dryad.png" alt="Flower Dryad" loading="lazy">
+        </div>
+        <div class="info">
+          <div class="badges"><span class="badge demon">Rift boss</span><span class="badge">Lv 20</span><span class="badge">AntiForest</span></div>
+          <h3 style="font-size: 1.8rem;">The Flower Dryad</h3>
+          <div class="hpbar" aria-hidden="true"><span></span></div>
+          <p>The mistress of the AntiForest waits in an arena at the end of the Rift. Her kit mixes a thrashing crescent sweep that hurls you back, a spinning ring of petals, and a long-reaching grass whip. She shrugs off stuns more easily than most.</p>
+          <ul class="phases">
+            <li style="--c: var(--normal);"><span class="ph">Phase 1</span><span>Melee-heavy and patient. Her special attacks come slowly: learn her tells here.</span></li>
+            <li style="--c: var(--gold);"><span class="ph">Phase 2</span><span>She favours <strong>Poison Nova</strong>, scattering clouds of poison across the arena. Keep moving and bring a Cleanse.</span></li>
+            <li style="--c: var(--crimson);"><span class="ph">Phase 3</span><span>Berserk. Everything comes faster. Finish her before she finishes you.</span></li>
+          </ul>
+          <p style="margin-top: 16px;"><strong>Rewards:</strong> a guaranteed haul of high-rarity loot, a Rift Lord mana core, and the key to the exit portal.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="codex">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Codex</p>
+        <h2>All monsters</h2>
+        <p class="muted">Threat rating is relative: one diamond is a stroll for a newcomer, five will test a veteran party.</p>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Filter monsters">
+        <div class="filter-group"><span>Zone</span>
+          <button class="chip" data-group="zone" data-value="all" aria-pressed="true">All</button>
+          <button class="chip" data-group="zone" data-value="lowlands" aria-pressed="false">Forest Hamlet lowlands</button>
+          <button class="chip" data-group="zone" data-value="capital" aria-pressed="false">Capital wilds</button>
+          <button class="chip" data-group="zone" data-value="rift" aria-pressed="false">AntiForest Rift</button>
+        </div>
+        <div class="filter-group"><span>Temperament</span>
+          <button class="chip" data-group="mode" data-value="all" aria-pressed="true">All</button>
+          <button class="chip" data-group="mode" data-value="curious" aria-pressed="false">Curious</button>
+          <button class="chip" data-group="mode" data-value="coward" aria-pressed="false">Coward</button>
+          <button class="chip" data-group="mode" data-value="threatening" aria-pressed="false">Threatening</button>
+          <button class="chip" data-group="mode" data-value="hunting" aria-pressed="false">Hunting</button>
+        </div>
+      </div>
+
+      <div class="monster-grid" data-filter-target>
+        <!-- Forest Hamlet lowlands -->
+        <article class="card monster reveal" data-zone="lowlands" data-mode="curious">
+          <div class="portrait" data-glyph="蕪"><span class="lvl">Lv 1</span><img src="assets/img/monsters/turnipa.png" alt="Turnipa" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge">Curious</span><span class="threat" role="img" aria-label="Threat 1 of 5"><i class="on"></i><i></i><i></i><i></i><i></i></span></div>
+            <h3>Turnipa</h3>
+            <p class="muted">A wandering turnip spirit of the fields around Forest Hamlet. It only fights back once struck, which makes it the perfect first hunt.</p>
+            <ul class="attacks"><li><b>Headbutt</b>, a short charge into you</li><li><b>Leaf Toss</b>, a thrown leaf from a few steps away</li></ul>
+            <div class="meta"><span><b>Found:</b> fields close to Forest Hamlet</span><span><b>Drops:</b> Turnipa Leaf, Turnipa mana core, coins, herbs, starter gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="lowlands" data-mode="curious">
+          <div class="portrait" data-glyph="蕪"><span class="lvl">Lv 5</span><img src="assets/img/monsters/sour-turnipa.png" alt="Sour Turnipa" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge">Curious</span><span class="threat" role="img" aria-label="Threat 1 of 5"><i class="on"></i><i></i><i></i><i></i><i></i></span></div>
+            <h3>Sour Turnipa</h3>
+            <p class="muted">A tougher, tangier cousin. Still slow to anger, but noticeably harder to put down.</p>
+            <ul class="attacks"><li><b>Headbutt</b></li><li><b>Sour Leaf Toss</b>, a stinging thrown leaf</li></ul>
+            <div class="meta"><span><b>Found:</b> among the Turnipa fields</span><span><b>Drops:</b> Sour Turnipa mana core, coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="lowlands" data-mode="threatening">
+          <div class="portrait" data-glyph="蕪"><span class="lvl">Lv 8</span><img src="assets/img/monsters/bitter-turnipa.png" alt="Bitter Turnipa" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 2 of 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></div>
+            <h3>Bitter Turnipa</h3>
+            <p class="muted">The bitter ones want a fight. They attack on sight and gather in groups of four, so never pull just one.</p>
+            <ul class="attacks"><li><b>Headbutt</b></li><li><b>Bitter Spray</b></li></ul>
+            <div class="meta"><span><b>Found:</b> clusters near Forest Hamlet</span><span><b>Drops:</b> Bitter Turnipa Leaf, Bitter Turnipa mana core, coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="lowlands" data-mode="coward">
+          <div class="portrait" data-glyph="兎"><span class="lvl">Lv 10</span><img src="assets/img/monsters/young-rabbit.png" alt="Young Rabbit" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge celestial">Coward</span><span class="threat" role="img" aria-label="Threat 2 of 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></div>
+            <h3>Young Rabbit</h3>
+            <p class="muted">Skittish rabbits on the edge of the forest. They bolt when you come near, but corner one and it kicks back hard.</p>
+            <ul class="attacks"><li><b>Kick</b></li><li><b>Hop Slam</b>, a leap that lands on you</li></ul>
+            <div class="meta"><span><b>Found:</b> the forest edge east of town</span><span><b>Drops:</b> Rabbit Fur, Rabbit mana core, coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="lowlands" data-mode="curious">
+          <div class="portrait" data-glyph="蜂"><span class="lvl">Lv 12</span><img src="assets/img/monsters/honey-bee.png" alt="Honey Bee" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge">Curious</span><span class="threat" role="img" aria-label="Threat 2 of 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></div>
+            <h3>Honey Bee</h3>
+            <p class="muted">Deep-forest bees that hover and watch. Provoke one and you will meet its sting, and its pollen.</p>
+            <ul class="attacks"><li><b>Sting</b></li><li><b>Pollen Burst</b>, a cloud of pollen around it</li></ul>
+            <div class="meta"><span><b>Found:</b> deep forest</span><span><b>Drops:</b> Honeycomb, Bee mana core, coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="lowlands" data-mode="coward">
+          <div class="portrait" data-glyph="兎"><span class="lvl">Lv 13</span><img src="assets/img/monsters/rabbit.png" alt="Rabbit" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge celestial">Coward</span><span class="threat" role="img" aria-label="Threat 2 of 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></div>
+            <h3>Rabbit</h3>
+            <p class="muted">Fully grown and much sturdier. Still runs first and asks questions later.</p>
+            <ul class="attacks"><li><b>Kick</b></li><li><b>Hop Slam</b></li></ul>
+            <div class="meta"><span><b>Found:</b> deep forest</span><span><b>Drops:</b> Rabbit Fur, Rabbit mana core, coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="lowlands" data-mode="curious">
+          <div class="portrait" data-glyph="蔓"><span class="lvl">Lv 14</span><img src="assets/img/monsters/planta-slave.png" alt="Planta Slave" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge">Curious</span><span class="threat" role="img" aria-label="Threat 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+            <h3>Planta Slave</h3>
+            <p class="muted">Vine creatures bound to a Shadow Planta. Six of them guard every camp, and each one you fell brings their master closer to rage.</p>
+            <ul class="attacks"><li><b>Vine Lash</b></li><li><b>Seed Spit</b>, a seed shot from range</li></ul>
+            <div class="meta"><span><b>Found:</b> Planta camps on the southern plains</span><span><b>Drops:</b> Planta Sap, Planta mana core, coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="lowlands" data-mode="curious hunting">
+          <div class="portrait" data-glyph="影"><span class="lvl">Lv 15</span><span class="badge crimson boss-tag">Boss</span><img src="assets/img/monsters/shadow-planta.png" alt="Shadow Planta" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge">Curious</span><span class="badge demon">Hunting</span><span class="threat" role="img" aria-label="Threat 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+            <h3>Shadow Planta</h3>
+            <p class="muted">Master of a Planta camp. Calm while its Slaves live, a hunter once they fall. <a href="#bosses">Boss guide</a></p>
+            <ul class="attacks"><li><b>Shadow Lash</b></li><li><b>Gloom Burst</b>, darkness erupting around it</li></ul>
+            <div class="meta"><span><b>Found:</b> the heart of each Planta camp</span><span><b>Drops:</b> Shadow Petal (always), coins, herbs, gear</span></div>
+          </div>
+        </article>
+
+        <!-- AntiForest Rift -->
+        <article class="card monster reveal" id="rift" data-zone="rift" data-mode="threatening">
+          <div class="portrait" data-glyph="樹"><span class="lvl">Lv 15</span><img src="assets/img/monsters/devil-tree.png" alt="Devil Tree" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+            <h3>Devil Tree</h3>
+            <p class="muted">The common guard of the AntiForest. Slow, heavy and dangerous to stand next to.</p>
+            <ul class="attacks"><li><b>Branch Smash</b></li><li><b>Root Quake</b>, a long wind-up then a ring of force around it. Get out of the ring.</li></ul>
+            <div class="meta"><span><b>Found:</b> AntiForest clearings</span><span><b>Drops:</b> Rift mana core, coins, herbs, better gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="rift" data-mode="threatening">
+          <div class="portrait" data-glyph="飴"><span class="lvl">Lv 15</span><img src="assets/img/monsters/candy-devil-tree.png" alt="Candy Devil Tree" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+            <h3>Candy Devil Tree</h3>
+            <p class="muted">Fragile but sneaky: it keeps its distance and peppers you with sugar from afar. Close the gap fast.</p>
+            <ul class="attacks"><li><b>Sugar Bolt</b>, a ranged shot, fired while backing away</li></ul>
+            <div class="meta"><span><b>Found:</b> AntiForest clearings</span><span><b>Drops:</b> Rift mana core, coins, herbs, better gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="rift" data-mode="threatening">
+          <div class="portrait" data-glyph="枯"><span class="lvl">Lv 17</span><img src="assets/img/monsters/withering-devil-tree.png" alt="Withering Devil Tree" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+            <h3>Withering Devil Tree</h3>
+            <p class="muted">A hulking, rotten tree with a deep well of health. Its blight leaves you poisoned long after the hit.</p>
+            <ul class="attacks"><li><b>Wither Smash</b></li><li><b>Blight Burst</b>, poison that keeps ticking</li></ul>
+            <div class="meta"><span><b>Found:</b> AntiForest clearings</span><span><b>Drops:</b> Rift mana core, coins, herbs, better gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="rift" data-mode="threatening">
+          <div class="portrait" data-glyph="闇"><span class="lvl">Lv 17</span><img src="assets/img/monsters/corrupt-devil-tree.png" alt="Corrupt Devil Tree" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+            <h3>Corrupt Devil Tree</h3>
+            <p class="muted">Twisted by the Demon Realm's miasma. It hits hardest of the Devil Trees, from near and far.</p>
+            <ul class="attacks"><li><b>Shadow Bolt</b>, a ranged bolt of darkness</li><li><b>Corrupt Burst</b>, an eruption around it</li></ul>
+            <div class="meta"><span><b>Found:</b> AntiForest clearings</span><span><b>Drops:</b> Rift mana core, coins, herbs, better gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="rift" data-mode="threatening">
+          <div class="portrait" data-glyph="花"><span class="lvl">Lv 20</span><span class="badge crimson boss-tag">Boss</span><img src="assets/img/monsters/flower-dryad.png" alt="Flower Dryad" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <h3>Flower Dryad</h3>
+            <p class="muted">The Rift's boss, fought in three phases. Bring a party. <a href="#dryad">Boss guide</a></p>
+            <ul class="attacks"><li><b>Crescent Thrash</b>, a sweeping knockback</li><li><b>Flower Spin</b>, a ring around her</li><li><b>Grass Whip</b>, long reach</li><li><b>Poison Nova</b>, poison clouds across the arena</li></ul>
+            <div class="meta"><span><b>Found:</b> the AntiForest arena</span><span><b>Drops:</b> Rift Lord mana core, guaranteed high-rarity loot</span></div>
+          </div>
+        </article>
+
+        <!-- Capital wilds -->
+        <article class="card monster reveal" data-zone="capital" data-mode="curious">
+          <div class="portrait" data-glyph="栗"><span class="lvl">Lv 20</span><img src="assets/img/monsters/porin.png" alt="Porin" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge">Curious</span><span class="threat" role="img" aria-label="Threat 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+            <h3>Porin</h3>
+            <p class="muted">Curious acorn-throwers. Once angered they keep their distance and pelt you from range.</p>
+            <ul class="attacks"><li><b>Acorn Throw</b>, fired while backing away</li></ul>
+            <div class="meta"><span><b>Found:</b> the road between the Capital and Forest Hamlet</span><span><b>Drops:</b> coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="capital" data-mode="threatening">
+          <div class="portrait" data-glyph="栗"><span class="lvl">Lv 23</span><img src="assets/img/monsters/elder-porin.png" alt="Elder Porin" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <h3>Elder Porin</h3>
+            <p class="muted">Older, bolder and aggressive. Its volleys land in several places at once, so watch the ground markers.</p>
+            <ul class="attacks"><li><b>Acorn Throw</b></li><li><b>Acorn Volley</b>, several impact zones around you</li></ul>
+            <div class="meta"><span><b>Found:</b> the road between the Capital and Forest Hamlet</span><span><b>Drops:</b> coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="capital" data-mode="threatening">
+          <div class="portrait" data-glyph="猪"><span class="lvl">Lv 25</span><img src="assets/img/monsters/boar.png" alt="Boar" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <h3>Boar</h3>
+            <p class="muted">A charging wall of tusks. Never stand directly in its path.</p>
+            <ul class="attacks"><li><b>Gore</b></li><li><b>Tusk Toss</b>, a wide sweep that knocks you back</li><li><b>Charge</b>, a rush from a distance</li></ul>
+            <div class="meta"><span><b>Found:</b> the wilds around the Capital</span><span><b>Drops:</b> coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="capital" data-mode="threatening">
+          <div class="portrait" data-glyph="猪"><span class="lvl">Lv 30</span><img src="assets/img/monsters/hog.png" alt="Hog" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <h3>Hog</h3>
+            <p class="muted">The Boar's bigger, meaner elder. Same moves, wider sweeps, heavier hits.</p>
+            <ul class="attacks"><li><b>Gore</b></li><li><b>Tusk Toss</b></li><li><b>Charge</b></li></ul>
+            <div class="meta"><span><b>Found:</b> further out from the Capital</span><span><b>Drops:</b> coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="capital" data-mode="curious">
+          <div class="portrait" data-glyph="蝸"><span class="lvl">Lv 35</span><img src="assets/img/monsters/snail.png" alt="Snail" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge">Curious</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Snail</h3>
+            <p class="muted">Harmless until you start it. Its shell shrugs off weak blows, so bring your strongest hits.</p>
+            <ul class="attacks"><li><b>Shell Slam</b></li><li><b>Slime Spit</b>, a ranged glob</li></ul>
+            <div class="meta"><span><b>Found:</b> the far wilds of the Capital</span><span><b>Drops:</b> coins, herbs, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="capital" data-mode="threatening">
+          <div class="portrait" data-glyph="岩"><span class="lvl">Lv 40</span><img src="assets/img/monsters/torren-snail.png" alt="Torren Snail" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Torren Snail</h3>
+            <p class="muted">The most dangerous thing on the Island today. Armoured, aggressive, and it throws rocks.</p>
+            <ul class="attacks"><li><b>Shell Slam</b></li><li><b>Rock Throw</b>, three rocks after a quick wind-up</li></ul>
+            <div class="meta"><span><b>Found:</b> the outermost Capital wilds</span><span><b>Drops:</b> coins, herbs, gear</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="empty-note">No monster matches both filters. Try another combination.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="tips">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Survive</p>
+        <h2>Combat tips</h2>
+        <div class="divider"><span></span></div>
+      </div>
+      <div class="grid grid-3">
+        <div class="window reveal"><h3>Read the ground</h3><p class="muted">Every monster attack paints its area on the ground before it lands. Step out of the marked zone and the attack misses. Big attacks wind up longer, which is your cue to move.</p></div>
+        <div class="window reveal"><h3>Break the wind-up</h3><p class="muted">Hit a monster hard enough while it is winding up and you <strong>stagger</strong> it, cancelling the attack and leaving it open for a moment. Some bosses resist it.</p></div>
+        <div class="window reveal"><h3>Strike the weak point</h3><p class="muted">A hit on a monster's weak point while it is winding up or staggered is a guaranteed critical hit. In VR, aim your swing; on PC, time it.</p></div>
+        <div class="window reveal"><h3>Mind your level</h3><p class="muted">Monsters well below your level give less and less experience, until they give none. Move on to the next area when kills stop paying.</p></div>
+        <div class="window reveal"><h3>Carry a cure</h3><p class="muted">Poison from Withering Devil Trees and the Flower Dryad keeps ticking. A Holy user's Cleanse removes it; potions buy you time.</p></div>
+        <div class="window reveal"><h3>Go together</h3><p class="muted">Party up for the Rift. Kills shared with nearby party members split experience and coins, and loot goes to a random member, so nobody fights over drops.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <p class="eyebrow">Prepare</p>
+      <h2>Choose the skills to answer them</h2>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-gold" href="skills.html">Skill trees</a>
+        <a class="btn btn-ghost" href="builds.html">Example builds</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div>
+      <img src="assets/img/brand/wordmark.png" alt="Oath Rift Online" width="520" height="167">
+      <p>A stylised anime VRMMORPG for Meta Quest, PC VR and PC. Swear the oath. Close the rift.</p>
+    </div>
+    <div>
+      <h4>Discover</h4>
+      <ul><li><a href="story.html">Story</a></li><li><a href="world.html">World</a></li><li><a href="bestiary.html">Bestiary</a></li><li><a href="skills.html">Skill Trees</a></li></ul>
+    </div>
+    <div>
+      <h4>Play</h4>
+      <ul><li><a href="builds.html">Builds</a></li><li><a href="gear.html">Gear</a></li><li><a href="guide.html">How to Play</a></li><li><a href="guide.html#faq">FAQ</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Vixen Capital PTY LTD. All rights reserved.</span>
+    <span>Oath Rift Online is in active development. Features and balance may change.</span>
+  </div>
+</div></footer>
+</body>
+</html>

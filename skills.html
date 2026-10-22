@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skill Trees | Oath Rift Online</title>
+<meta name="description" content="All eight skill trees in Oath Rift Online, from Magic to Lady Luck: every skill and passive, how trees unlock, and how skills grow with use.">
+<meta property="og:title" content="Skill Trees | Oath Rift Online">
+<meta property="og:description" content="All eight skill trees in Oath Rift Online, from Magic to Lady Luck: every skill and passive, how trees unlock, and how skills grow with use.">
+<meta property="og:image" content="assets/img/brand/splash.jpg">
+<link rel="icon" href="assets/img/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Noto+Serif+JP:wght@700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container">
+  <a class="brand" href="index.html"><img src="assets/img/brand/wordmark.png" alt="Oath Rift Online" width="520" height="167"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="story.html">Story</a>
+    <a href="world.html">World</a>
+    <a href="bestiary.html">Bestiary</a>
+    <a href="skills.html">Skill Trees</a>
+    <a href="builds.html">Builds</a>
+    <a href="gear.html">Gear</a>
+    <a href="guide.html">How to Play</a>
+    <a class="btn btn-gold btn-sm" href="guide.html#start">Start Playing</a>
+  </nav>
+</div></header>
+
+<main id="main">
+  <section class="page-hero" data-realm="celestial">
+    <div class="bg banner" style="background-image: url('assets/img/banners/skills.jpg');"></div>
+    <span class="kanji" aria-hidden="true">技能</span>
+    <div class="container">
+      <p class="eyebrow">Skill codex</p>
+      <h1>Skill Trees</h1>
+      <p class="lead">There are no classes in Oath Rift Online. Your skills come from eight trees, and you can mix them however you like. Pick a tree below, then click any node to read what it does.</p>
+      <div class="toc" style="margin-top: 22px;"><a href="#how">How trees work</a><a href="#trees">The eight trees</a><a href="#mastery">Skill mastery</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">The basics</p>
+        <h2>How skill trees work</h2>
+        <div class="divider"><span></span></div>
+      </div>
+      <div class="grid grid-3">
+        <div class="window reveal"><h3>One point per level</h3><p class="muted">Every level after the first gives you one tree point. Spend it in any tree you have unlocked, or bank it for later: unspent points wait for you.</p></div>
+        <div class="window reveal"><h3>Gates and roots</h3><p class="muted">Each tree starts from its root nodes. Deeper nodes open once you have learnt the node they grow from and spent enough points in that tree. Nodes below are marked Root, Early, Mid or Deep.</p></div>
+        <div class="window reveal"><h3>Skills and passives</h3><p class="muted">Square nodes teach a <strong>skill</strong> you place in a hand slot. Round nodes are <strong>passives</strong>: always on, and most can be ranked up several times.</p></div>
+        <div class="window reveal"><h3>Depth pays</h3><p class="muted">Every point you spend in a tree also strengthens that tree's attacks, so going deep in one tree is never wasted, even on passives.</p></div>
+        <div class="window reveal"><h3>Unlock with tomes</h3><p class="muted">Magic, Swordsmanship and Archery are open from the start. The other five are unlocked by reading a tome, bought in Forest Hamlet or found as a rare drop, more often inside the Rift.</p></div>
+        <div class="window reveal"><h3>Change your mind</h3><p class="muted">The <strong>Tome of Forgetting</strong> refunds every tree point (unlocked trees stay unlocked). The <strong>Tome of Renewal</strong> refunds your attribute points. Pell sells both.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="trees">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The eight trees</p>
+        <h2>Choose a tree</h2>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Skill trees">
+        <button class="tab" role="tab" id="tab-magic" aria-controls="tree-magic" aria-selected="false"><img src="assets/img/icons/trees/MagicTree.png" alt="">Magic</button>
+        <button class="tab" role="tab" id="tab-swords" aria-controls="tree-swords" aria-selected="false"><img src="assets/img/icons/trees/SwordsmanshipTree.png" alt="">Swordsmanship</button>
+        <button class="tab" role="tab" id="tab-archery" aria-controls="tree-archery" aria-selected="false"><img src="assets/img/icons/trees/ArcheryTree.png" alt="">Archery</button>
+        <button class="tab" role="tab" id="tab-knight" aria-controls="tree-knight" aria-selected="false"><img src="assets/img/icons/trees/HeavyKnightTree.png" alt="">Heavy Knight</button>
+        <button class="tab" role="tab" id="tab-holy" aria-controls="tree-holy" aria-selected="false"><img src="assets/img/icons/trees/HolyTree.png" alt="">Holy</button>
+        <button class="tab" role="tab" id="tab-fang" aria-controls="tree-fang" aria-selected="false"><img src="assets/img/icons/trees/DrainingFangTree.png" alt="">Draining Fang</button>
+        <button class="tab" role="tab" id="tab-assassin" aria-controls="tree-assassin" aria-selected="false"><img src="assets/img/icons/trees/AssassinTree.png" alt="">Way of the Assassin</button>
+        <button class="tab" role="tab" id="tab-luck" aria-controls="tree-luck" aria-selected="false"><img src="assets/img/icons/trees/LadyLuckTree.png" alt="">Lady Luck</button>
+      </div>
+      <div class="tab-panel" id="tree-magic" role="tabpanel" aria-labelledby="tab-magic" data-realm="celestial">
+        <div class="tree-head">
+          <img src="assets/img/icons/trees/MagicTree.png" alt="">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Magic</h3>
+            <p style="margin-bottom: 8px;">Raw elemental spellcraft: fire, ice and lightning, guarded by a shield of pure mana.</p>
+            <div class="badges"><span class="badge gold">Scales with Intelligence</span></div>
+            <p class="muted" style="margin: 0;"><strong>Unlock:</strong> Known from the start. Every point you spend in Magic strengthens all your spells.</p>
+          </div>
+        </div>
+        <div class="tree-map" style="--cols: 4;" aria-label="Magic tree map">
+          <button class="node passive" data-id="101" data-card="node-101" style="grid-row: 1; grid-column: 2 / span 2;" aria-label="Mana Well, passive"><img src="assets/img/icons/trees/ManaWell.png" alt="" loading="lazy"><span class="name">Mana Well</span><span class="gate">Root</span></button>
+          <button class="node skill" data-id="103" data-parent="101" data-card="node-103" style="grid-row: 2; grid-column: 1;" aria-label="Ice Bolt, skill"><img src="assets/img/icons/skills/IceBolt.png" alt="" loading="lazy"><span class="name">Ice Bolt</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="107" data-parent="101" data-card="node-107" style="grid-row: 2; grid-column: 2;" aria-label="Mana Shield, skill"><img src="assets/img/icons/skills/ManaShield.png" alt="" loading="lazy"><span class="name">Mana Shield</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="102" data-parent="101" data-card="node-102" style="grid-row: 2; grid-column: 4;" aria-label="Spell Focus, passive"><img src="assets/img/icons/trees/SpellFocus.png" alt="" loading="lazy"><span class="name">Spell Focus</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="104" data-parent="103" data-card="node-104" style="grid-row: 3; grid-column: 1;" aria-label="Ice Laser, skill"><img src="assets/img/icons/skills/IceLaser.png" alt="" loading="lazy"><span class="name">Ice Laser</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="108" data-parent="107" data-card="node-108" style="grid-row: 3; grid-column: 2;" aria-label="Arcane Bulwark, passive"><img src="assets/img/icons/trees/ArcaneBulwark.png" alt="" loading="lazy"><span class="name">Arcane Bulwark</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="109" data-parent="107" data-card="node-109" style="grid-row: 3; grid-column: 3;" aria-label="Mana Attunement, passive"><img src="assets/img/icons/trees/ManaAttunement.png" alt="" loading="lazy"><span class="name">Mana Attunement</span><span class="gate">Deep</span></button>
+          <button class="node skill" data-id="105" data-parent="102" data-card="node-105" style="grid-row: 3; grid-column: 4;" aria-label="Fire Nova, skill"><img src="assets/img/icons/skills/FireNova.png" alt="" loading="lazy"><span class="name">Fire Nova</span><span class="gate">Deep</span></button>
+          <button class="node skill" data-id="106" data-parent="104" data-card="node-106" style="grid-row: 4; grid-column: 1;" aria-label="Chain Lightning, skill"><img src="assets/img/icons/skills/ChainLightning.png" alt="" loading="lazy"><span class="name">Chain Lightning</span><span class="gate">Deep</span></button>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card"><img src="assets/img/icons/skills/Fireball.png" alt="" loading="lazy"><div><h4>Fireball</h4><div class="badges"><span class="badge">Projectile</span><span class="badge gold">Known by all</span></div><p>A slow-forming fireball with long range. Known by every adventurer.</p></div></article>
+          <article class="skill-card"><img src="assets/img/icons/skills/FlameBurst.png" alt="" loading="lazy"><div><h4>Flame Burst</h4><div class="badges"><span class="badge">Area</span><span class="badge gold">Known by all</span></div><p>Fire erupts in a circle at the spot you target. Known by every adventurer.</p></div></article>
+          <article class="skill-card passive" id="node-101"><img src="assets/img/icons/trees/ManaWell.png" alt="" loading="lazy"><div><h4>Mana Well</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank deepens your mana pool.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card skill" id="node-103"><img src="assets/img/icons/skills/IceBolt.png" alt="" loading="lazy"><div><h4>Ice Bolt</h4><div class="badges"><span class="badge">Projectile</span></div><p>A quick, cheap shard of ice on a short cooldown. The spell you will cast most.</p><p class="req">Grows from Mana Well. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-107"><img src="assets/img/icons/skills/ManaShield.png" alt="" loading="lazy"><div><h4>Mana Shield</h4><div class="badges"><span class="badge">Self</span><span class="badge">Buff</span></div><p>For a long while, damage drains your mana instead of your health, and your Intelligence hardens your defence.</p><p class="req">Grows from Mana Well. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-102"><img src="assets/img/icons/trees/SpellFocus.png" alt="" loading="lazy"><div><h4>Spell Focus</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank sharpens the damage of all your spells.</p><p class="req">Grows from Mana Well. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-104"><img src="assets/img/icons/skills/IceLaser.png" alt="" loading="lazy"><div><h4>Ice Laser</h4><div class="badges"><span class="badge">Projectile</span></div><p>Charge, then fire a near-instant beam of ice that hits very hard.</p><p class="req">Grows from Ice Bolt. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-108"><img src="assets/img/icons/trees/ArcaneBulwark.png" alt="" loading="lazy"><div><h4>Arcane Bulwark</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>While Mana Shield is up, your Intelligence adds even more to your defence.</p><p class="req">Grows from Mana Shield. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-109"><img src="assets/img/icons/trees/ManaAttunement.png" alt="" loading="lazy"><div><h4>Mana Attunement</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Mana Shield drains less mana for every blow it absorbs.</p><p class="req">Grows from Mana Shield. Deep in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-105"><img src="assets/img/icons/skills/FireNova.png" alt="" loading="lazy"><div><h4>Fire Nova</h4><div class="badges"><span class="badge">Self</span><span class="badge">Area</span></div><p>A long incantation that detonates a huge ring of fire around you. Devastating against crowds, risky to channel.</p><p class="req">Grows from Spell Focus. Deep in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-106"><img src="assets/img/icons/skills/ChainLightning.png" alt="" loading="lazy"><div><h4>Chain Lightning</h4><div class="badges"><span class="badge">Projectile</span><span class="badge">Chains</span></div><p>Lightning leaps from your target to several more monsters, weakening a little with each jump. Your staff adds to its power.</p><p class="req">Grows from Ice Laser. Deep in the tree.</p></div></article>
+        </div>
+      </div>
+      <div class="tab-panel" id="tree-swords" role="tabpanel" aria-labelledby="tab-swords" data-realm="normal">
+        <div class="tree-head">
+          <img src="assets/img/icons/trees/SwordsmanshipTree.png" alt="">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Swordsmanship</h3>
+            <p style="margin-bottom: 8px;">The way of the blade. Sword techniques and battle buffs that turn plain steel into a blazing edge.</p>
+            <div class="badges"><span class="badge gold">Scales with Strength</span></div>
+            <p class="muted" style="margin: 0;"><strong>Unlock:</strong> Known from the start. Every point you spend in Swordsmanship strengthens your sword attacks.</p>
+          </div>
+        </div>
+        <div class="tree-map" style="--cols: 3;" aria-label="Swordsmanship tree map">
+          <button class="node passive" data-id="201" data-card="node-201" style="grid-row: 1; grid-column: 2;" aria-label="Blade Discipline, passive"><img src="assets/img/icons/trees/BladeDiscipline.png" alt="" loading="lazy"><span class="name">Blade Discipline</span><span class="gate">Root</span></button>
+          <button class="node skill" data-id="204" data-parent="201" data-card="node-204" style="grid-row: 2; grid-column: 1;" aria-label="Enhance Strength, skill"><img src="assets/img/icons/skills/EnhanceStrength.png" alt="" loading="lazy"><span class="name">Enhance Strength</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="202" data-parent="201" data-card="node-202" style="grid-row: 2; grid-column: 3;" aria-label="Crescent Slash, skill"><img src="assets/img/icons/skills/CrescentSlash.png" alt="" loading="lazy"><span class="name">Crescent Slash</span><span class="gate">Mid</span></button>
+          <button class="node skill" data-id="205" data-parent="204" data-card="node-205" style="grid-row: 3; grid-column: 1;" aria-label="Enhance Speed, skill"><img src="assets/img/icons/skills/EnhanceSpeed.png" alt="" loading="lazy"><span class="name">Enhance Speed</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="203" data-parent="202" data-card="node-203" style="grid-row: 3; grid-column: 3;" aria-label="Twin Blades, passive"><img src="assets/img/icons/trees/TwinBlades.png" alt="" loading="lazy"><span class="name">Twin Blades</span><span class="gate">Mid</span></button>
+          <button class="node skill" data-id="206" data-parent="205" data-card="node-206" style="grid-row: 4; grid-column: 1;" aria-label="Enhance Fire, skill"><img src="assets/img/icons/skills/EnhanceFire.png" alt="" loading="lazy"><span class="name">Enhance Fire</span><span class="gate">Deep</span></button>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card passive" id="node-201"><img src="assets/img/icons/trees/BladeDiscipline.png" alt="" loading="lazy"><div><h4>Blade Discipline</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank makes your sword strikes hit harder.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card skill" id="node-204"><img src="assets/img/icons/skills/EnhanceStrength.png" alt="" loading="lazy"><div><h4>Enhance Strength</h4><div class="badges"><span class="badge">Self</span><span class="badge">Buff</span></div><p>Steel your muscles: a long-lasting boost to Strength.</p><p class="req">Grows from Blade Discipline. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-202"><img src="assets/img/icons/skills/CrescentSlash.png" alt="" loading="lazy"><div><h4>Crescent Slash</h4><div class="badges"><span class="badge">Arc</span><span class="badge">Needs a sword</span></div><p>Fling a wide crescent of force from your blade, striking everything in front of you. Strongest up close, weaker at the edge of its reach.</p><p class="req">Grows from Blade Discipline. Mid in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-205"><img src="assets/img/icons/skills/EnhanceSpeed.png" alt="" loading="lazy"><div><h4>Enhance Speed</h4><div class="badges"><span class="badge">Self</span><span class="badge">Buff</span></div><p>Lighten your step: a long-lasting boost to movement speed.</p><p class="req">Grows from Enhance Strength. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-203"><img src="assets/img/icons/trees/TwinBlades.png" alt="" loading="lazy"><div><h4>Twin Blades</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank adds melee damage while you dual wield. The path of the dual-wielding expert.</p><p class="req">Grows from Crescent Slash. Mid in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-206"><img src="assets/img/icons/skills/EnhanceFire.png" alt="" loading="lazy"><div><h4>Enhance Fire</h4><div class="badges"><span class="badge">Self</span><span class="badge">Buff</span></div><p>Wreathe your weapon in flame: your attacks deal extra fire damage for a long time.</p><p class="req">Grows from Enhance Speed. Deep in the tree.</p></div></article>
+        </div>
+      </div>
+      <div class="tab-panel" id="tree-archery" role="tabpanel" aria-labelledby="tab-archery" data-realm="normal">
+        <div class="tree-head">
+          <img src="assets/img/icons/trees/ArcheryTree.png" alt="">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Archery</h3>
+            <p style="margin-bottom: 8px;">Patience and precision. Prime a special shot, then draw and release it yourself.</p>
+            <div class="badges"><span class="badge gold">Scales with Dexterity</span></div>
+            <p class="muted" style="margin: 0;"><strong>Unlock:</strong> Known from the start. Every point you spend in Archery strengthens your bow attacks.</p>
+            <p class="muted" style="margin: 6px 0 0;">Arrows never run out. A primed shot fires with your next normal draw.</p>
+          </div>
+        </div>
+        <div class="tree-map" style="--cols: 3;" aria-label="Archery tree map">
+          <button class="node passive" data-id="301" data-card="node-301" style="grid-row: 1; grid-column: 2;" aria-label="Steady Aim, passive"><img src="assets/img/icons/trees/SteadyAim.png" alt="" loading="lazy"><span class="name">Steady Aim</span><span class="gate">Root</span></button>
+          <button class="node skill" data-id="302" data-parent="301" data-card="node-302" style="grid-row: 2; grid-column: 1;" aria-label="Power Shot, skill"><img src="assets/img/icons/skills/PowerShot.png" alt="" loading="lazy"><span class="name">Power Shot</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="304" data-parent="301" data-card="node-304" style="grid-row: 2; grid-column: 3;" aria-label="Enhance Chain Lightning, skill"><img src="assets/img/icons/skills/EnhanceChainLightning.png" alt="" loading="lazy"><span class="name">Enhance Chain Lightning</span><span class="gate">Deep</span></button>
+          <button class="node skill" data-id="303" data-parent="302" data-card="node-303" style="grid-row: 3; grid-column: 1;" aria-label="Spread Shot, skill"><img src="assets/img/icons/skills/SpreadShot.png" alt="" loading="lazy"><span class="name">Spread Shot</span><span class="gate">Mid</span></button>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card passive" id="node-301"><img src="assets/img/icons/trees/SteadyAim.png" alt="" loading="lazy"><div><h4>Steady Aim</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank makes your arrows hit harder.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card skill" id="node-302"><img src="assets/img/icons/skills/PowerShot.png" alt="" loading="lazy"><div><h4>Power Shot</h4><div class="badges"><span class="badge">Primed shot</span></div><p>Prime your next arrow to fly further and strike with tremendous force. Takes a moment to prime.</p><p class="req">Grows from Steady Aim. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-304"><img src="assets/img/icons/skills/EnhanceChainLightning.png" alt="" loading="lazy"><div><h4>Enhance Chain Lightning</h4><div class="badges"><span class="badge">Self</span><span class="badge">Buff</span></div><p>Charge your arrows with lightning for a long time: each hit arcs to nearby monsters.</p><p class="req">Grows from Steady Aim. Deep in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-303"><img src="assets/img/icons/skills/SpreadShot.png" alt="" loading="lazy"><div><h4>Spread Shot</h4><div class="badges"><span class="badge">Primed shot</span></div><p>Prime your next arrow to split into a wide fan of arrows.</p><p class="req">Grows from Power Shot. Mid in the tree.</p></div></article>
+        </div>
+      </div>
+      <div class="tab-panel" id="tree-knight" role="tabpanel" aria-labelledby="tab-knight" data-realm="celestial">
+        <div class="tree-head">
+          <img src="assets/img/icons/trees/HeavyKnightTree.png" alt="">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Heavy Knight</h3>
+            <p style="margin-bottom: 8px;">The unbreakable wall. Shields, taunts and sheer toughness that keep a party standing.</p>
+            <div class="badges"><span class="badge gold">Scales with Strength</span></div>
+            <p class="muted" style="margin: 0;"><strong>Unlock:</strong> Read the Heavy Knight Tome, sold by Garrick in Forest Hamlet. Needs level 10 and a good amount of Strength. Heavy Knight gear: the Bastion armour set and the Aegis of Dawn shield are only for knights who have invested in this tree.</p>
+          </div>
+        </div>
+        <div class="tree-map" style="--cols: 4;" aria-label="Heavy Knight tree map">
+          <button class="node skill" data-id="401" data-card="node-401" style="grid-row: 1; grid-column: 2 / span 2;" aria-label="Shield Bash, skill"><img src="assets/img/icons/skills/ShieldBash.png" alt="" loading="lazy"><span class="name">Shield Bash</span><span class="gate">Root</span></button>
+          <button class="node skill" data-id="404" data-parent="401" data-card="node-404" style="grid-row: 2; grid-column: 1;" aria-label="Taunt, skill"><img src="assets/img/icons/skills/Taunt.png" alt="" loading="lazy"><span class="name">Taunt</span><span class="gate">Early</span></button>
+          <button class="node passive" data-id="402" data-parent="401" data-card="node-402" style="grid-row: 2; grid-column: 2;" aria-label="Bulwark, passive"><img src="assets/img/icons/trees/Bulwark.png" alt="" loading="lazy"><span class="name">Bulwark</span><span class="gate">Early</span></button>
+          <button class="node passive" data-id="407" data-parent="401" data-card="node-407" style="grid-row: 2; grid-column: 4;" aria-label="Fortitude, passive"><img src="assets/img/icons/trees/Fortitude.png" alt="" loading="lazy"><span class="name">Fortitude</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="405" data-parent="404" data-card="node-405" style="grid-row: 3; grid-column: 1;" aria-label="Taunt All, skill"><img src="assets/img/icons/skills/TauntAll.png" alt="" loading="lazy"><span class="name">Taunt All</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="403" data-parent="402" data-card="node-403" style="grid-row: 3; grid-column: 2;" aria-label="Iron Body, passive"><img src="assets/img/icons/trees/IronBody.png" alt="" loading="lazy"><span class="name">Iron Body</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="406" data-parent="402" data-card="node-406" style="grid-row: 3; grid-column: 3;" aria-label="Enhance Defense, skill"><img src="assets/img/icons/skills/EnhanceDefense.png" alt="" loading="lazy"><span class="name">Enhance Defense</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="408" data-parent="407" data-card="node-408" style="grid-row: 3; grid-column: 4;" aria-label="Last Man Standing, passive"><img src="assets/img/icons/trees/LastManStanding.png" alt="" loading="lazy"><span class="name">Last Man Standing</span><span class="gate">Deep</span></button>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card skill" id="node-401"><img src="assets/img/icons/skills/ShieldBash.png" alt="" loading="lazy"><div><h4>Shield Bash</h4><div class="badges"><span class="badge">Arc</span><span class="badge">Needs a shield</span></div><p>Slam your shield into everything in front of you and hurl them back. Its power comes from your defence, not your weapon.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card skill" id="node-404"><img src="assets/img/icons/skills/Taunt.png" alt="" loading="lazy"><div><h4>Taunt</h4><div class="badges"><span class="badge">Projectile</span></div><p>Force one monster to fight you for a few seconds.</p><p class="req">Grows from Shield Bash. Early in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-402"><img src="assets/img/icons/trees/Bulwark.png" alt="" loading="lazy"><div><h4>Bulwark</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank raises your defence while you carry a shield.</p><p class="req">Grows from Shield Bash. Early in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-407"><img src="assets/img/icons/trees/Fortitude.png" alt="" loading="lazy"><div><h4>Fortitude</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank raises your defence, shield or no shield.</p><p class="req">Grows from Shield Bash. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-405"><img src="assets/img/icons/skills/TauntAll.png" alt="" loading="lazy"><div><h4>Taunt All</h4><div class="badges"><span class="badge">Self</span><span class="badge">Area</span></div><p>Roar a challenge that turns every nearby monster on you.</p><p class="req">Grows from Taunt. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-403"><img src="assets/img/icons/trees/IronBody.png" alt="" loading="lazy"><div><h4>Iron Body</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank raises your maximum health.</p><p class="req">Grows from Bulwark. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-406"><img src="assets/img/icons/skills/EnhanceDefense.png" alt="" loading="lazy"><div><h4>Enhance Defense</h4><div class="badges"><span class="badge">Self</span><span class="badge">Buff</span></div><p>A long-lasting boost to defence.</p><p class="req">Grows from Bulwark. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-408"><img src="assets/img/icons/trees/LastManStanding.png" alt="" loading="lazy"><div><h4>Last Man Standing</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Lifesaver</span></div><p>A killing blow leaves you clinging on with a sliver of health and briefly invulnerable instead. It recharges very slowly, so make it count.</p><p class="req">Grows from Fortitude. Deep in the tree.</p></div></article>
+        </div>
+      </div>
+      <div class="tab-panel" id="tree-holy" role="tabpanel" aria-labelledby="tab-holy" data-realm="celestial">
+        <div class="tree-head">
+          <img src="assets/img/icons/trees/HolyTree.png" alt="">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Holy</h3>
+            <p style="margin-bottom: 8px;">Light that mends. Heals, cleansing and holy bolts: the party&#x27;s lifeline.</p>
+            <div class="badges"><span class="badge gold">Scales with Intelligence</span></div>
+            <p class="muted" style="margin: 0;"><strong>Unlock:</strong> Read the Holy Tome, sold by Pell in Forest Hamlet. Needs level 10 and a good amount of Intelligence. Every point you spend in Holy strengthens its spells.</p>
+          </div>
+        </div>
+        <div class="tree-map" style="--cols: 4;" aria-label="Holy tree map">
+          <button class="node skill" data-id="503" data-card="node-503" style="grid-row: 1; grid-column: 1 / span 2;" aria-label="Heal, skill"><img src="assets/img/icons/skills/Heal.png" alt="" loading="lazy"><span class="name">Heal</span><span class="gate">Root</span></button>
+          <button class="node passive" data-id="501" data-card="node-501" style="grid-row: 1; grid-column: 3 / span 2;" aria-label="Devotion, passive"><img src="assets/img/icons/trees/Devotion.png" alt="" loading="lazy"><span class="name">Devotion</span><span class="gate">Root</span></button>
+          <button class="node skill" data-id="505" data-parent="503" data-card="node-505" style="grid-row: 2; grid-column: 1;" aria-label="Cleanse, skill"><img src="assets/img/icons/skills/Cleanse.png" alt="" loading="lazy"><span class="name">Cleanse</span><span class="gate">Mid</span></button>
+          <button class="node skill" data-id="506" data-parent="503" data-card="node-506" style="grid-row: 2; grid-column: 2;" aria-label="Heal Area, skill"><img src="assets/img/icons/skills/HealArea.png" alt="" loading="lazy"><span class="name">Heal Area</span><span class="gate">Mid</span></button>
+          <button class="node skill" data-id="504" data-parent="501" data-card="node-504" style="grid-row: 2; grid-column: 3;" aria-label="Holy Bolt, skill"><img src="assets/img/icons/skills/HolyBolt.png" alt="" loading="lazy"><span class="name">Holy Bolt</span><span class="gate">Early</span></button>
+          <button class="node passive" data-id="502" data-parent="501" data-card="node-502" style="grid-row: 2; grid-column: 4;" aria-label="Blessed Body, passive"><img src="assets/img/icons/trees/BlessedBody.png" alt="" loading="lazy"><span class="name">Blessed Body</span><span class="gate">Early</span></button>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card skill" id="node-503"><img src="assets/img/icons/skills/Heal.png" alt="" loading="lazy"><div><h4>Heal</h4><div class="badges"><span class="badge">Projectile</span><span class="badge">Heal</span></div><p>Send healing light along your aim. It mends the first ally it reaches, or you if it finds no one.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card passive" id="node-501"><img src="assets/img/icons/trees/Devotion.png" alt="" loading="lazy"><div><h4>Devotion</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank deepens your mana pool.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card skill" id="node-505"><img src="assets/img/icons/skills/Cleanse.png" alt="" loading="lazy"><div><h4>Cleanse</h4><div class="badges"><span class="badge">Projectile</span><span class="badge">Cure</span></div><p>Purge poison. Slow to cast, invaluable in the Rift.</p><p class="req">Grows from Heal. Mid in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-506"><img src="assets/img/icons/skills/HealArea.png" alt="" loading="lazy"><div><h4>Heal Area</h4><div class="badges"><span class="badge">Area</span><span class="badge">Heal</span></div><p>Bathe an area in light, healing every ally inside. Costly, with a long cooldown.</p><p class="req">Grows from Heal. Mid in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-504"><img src="assets/img/icons/skills/HolyBolt.png" alt="" loading="lazy"><div><h4>Holy Bolt</h4><div class="badges"><span class="badge">Projectile</span></div><p>A fast, cheap bolt of holy light with no cooldown at all.</p><p class="req">Grows from Devotion. Early in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-502"><img src="assets/img/icons/trees/BlessedBody.png" alt="" loading="lazy"><div><h4>Blessed Body</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank raises your maximum health.</p><p class="req">Grows from Devotion. Early in the tree.</p></div></article>
+        </div>
+      </div>
+      <div class="tab-panel" id="tree-fang" role="tabpanel" aria-labelledby="tab-fang" data-realm="demon">
+        <div class="tree-head">
+          <img src="assets/img/icons/trees/DrainingFangTree.png" alt="">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Draining Fang</h3>
+            <p style="margin-bottom: 8px;">Forbidden arts of blood and stone. Steal life, petrify your foes and unleash a swarm.</p>
+            <div class="badges"><span class="badge gold">Scales with Intelligence, and Vitality for Life Drain</span></div>
+            <p class="muted" style="margin: 0;"><strong>Unlock:</strong> Read the Draining Fang Tome, sold by Pell in Forest Hamlet. Needs level 10 and a good amount of Intelligence. Every point you spend in Draining Fang strengthens its spells.</p>
+          </div>
+        </div>
+        <div class="tree-map" style="--cols: 4;" aria-label="Draining Fang tree map">
+          <button class="node skill" data-id="601" data-card="node-601" style="grid-row: 1; grid-column: 2;" aria-label="Life Drain, skill"><img src="assets/img/icons/skills/LifeDrain.png" alt="" loading="lazy"><span class="name">Life Drain</span><span class="gate">Root</span></button>
+          <button class="node passive" data-id="605" data-card="node-605" style="grid-row: 1; grid-column: 4;" aria-label="Night Hunger, passive"><img src="assets/img/icons/trees/NightHunger.png" alt="" loading="lazy"><span class="name">Night Hunger</span><span class="gate">Root</span></button>
+          <button class="node passive" data-id="604" data-parent="601" data-card="node-604" style="grid-row: 2; grid-column: 1;" aria-label="Sanguine Feast, passive"><img src="assets/img/icons/trees/SanguineFeast.png" alt="" loading="lazy"><span class="name">Sanguine Feast</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="602" data-parent="601" data-card="node-602" style="grid-row: 2; grid-column: 2;" aria-label="Petrify, skill"><img src="assets/img/icons/skills/Petrify.png" alt="" loading="lazy"><span class="name">Petrify</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="603" data-parent="601" data-card="node-603" style="grid-row: 2; grid-column: 3;" aria-label="Swarm, skill"><img src="assets/img/icons/skills/Swarm.png" alt="" loading="lazy"><span class="name">Swarm</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="606" data-parent="605" data-card="node-606" style="grid-row: 2; grid-column: 4;" aria-label="Vampiric Vigor, passive"><img src="assets/img/icons/trees/VampiricVigor.png" alt="" loading="lazy"><span class="name">Vampiric Vigor</span><span class="gate">Mid</span></button>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card skill" id="node-601"><img src="assets/img/icons/skills/LifeDrain.png" alt="" loading="lazy"><div><h4>Life Drain</h4><div class="badges"><span class="badge">Projectile</span><span class="badge">Heal</span></div><p>Tear life from a monster and take it as your own. Costs no mana and grows with your Vitality.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card passive" id="node-605"><img src="assets/img/icons/trees/NightHunger.png" alt="" loading="lazy"><div><h4>Night Hunger</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank strengthens every Draining Fang attack.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card passive" id="node-604"><img src="assets/img/icons/trees/SanguineFeast.png" alt="" loading="lazy"><div><h4>Sanguine Feast</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank makes Life Drain heal you for more.</p><p class="req">Grows from Life Drain. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-602"><img src="assets/img/icons/skills/Petrify.png" alt="" loading="lazy"><div><h4>Petrify</h4><div class="badges"><span class="badge">Projectile</span><span class="badge">Control</span></div><p>Turn a monster to stone for a few seconds. A long cooldown, and priceless in a pinch.</p><p class="req">Grows from Life Drain. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-603"><img src="assets/img/icons/skills/Swarm.png" alt="" loading="lazy"><div><h4>Swarm</h4><div class="badges"><span class="badge">Arc</span><span class="badge">Channelled</span></div><p>Channel a swarm into a long, narrow cone, hitting everything inside again and again for a few seconds.</p><p class="req">Grows from Life Drain. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-606"><img src="assets/img/icons/trees/VampiricVigor.png" alt="" loading="lazy"><div><h4>Vampiric Vigor</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank raises your natural Strength and Vitality. Bonuses from gear are not included.</p><p class="req">Grows from Night Hunger. Mid in the tree.</p></div></article>
+        </div>
+      </div>
+      <div class="tab-panel" id="tree-assassin" role="tabpanel" aria-labelledby="tab-assassin" data-realm="demon">
+        <div class="tree-head">
+          <img src="assets/img/icons/trees/AssassinTree.png" alt="">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Way of the Assassin</h3>
+            <p style="margin-bottom: 8px;">Strike from the shadows. Stealth, backstabs and poison, with a dagger in each hand.</p>
+            <div class="badges"><span class="badge gold">Scales with Dexterity (daggers)</span></div>
+            <p class="muted" style="margin: 0;"><strong>Unlock:</strong> Read the Way of the Assassin Tome, sold by Garrick in Forest Hamlet. Needs level 10, Dexterity and Agility. A rare and costly tome. Every point you spend here strengthens your dagger attacks. The Shadowstalker armour set is reserved for assassins who have invested in this tree.</p>
+          </div>
+        </div>
+        <div class="tree-map" style="--cols: 4;" aria-label="Way of the Assassin tree map">
+          <button class="node skill" data-id="701" data-card="node-701" style="grid-row: 1; grid-column: 2;" aria-label="Backstab, skill"><img src="assets/img/icons/skills/Backstab.png" alt="" loading="lazy"><span class="name">Backstab</span><span class="gate">Root</span></button>
+          <button class="node passive" data-id="704" data-card="node-704" style="grid-row: 1; grid-column: 4;" aria-label="Shadow Edge, passive"><img src="assets/img/icons/trees/ShadowEdge.png" alt="" loading="lazy"><span class="name">Shadow Edge</span><span class="gate">Root</span></button>
+          <button class="node passive" data-id="706" data-parent="701" data-card="node-706" style="grid-row: 2; grid-column: 1;" aria-label="Shadow Blades, passive"><img src="assets/img/icons/trees/ShadowBlades.png" alt="" loading="lazy"><span class="name">Shadow Blades</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="702" data-parent="701" data-card="node-702" style="grid-row: 2; grid-column: 2;" aria-label="Stealth, skill"><img src="assets/img/icons/skills/Stealth.png" alt="" loading="lazy"><span class="name">Stealth</span><span class="gate">Early</span></button>
+          <button class="node passive" data-id="707" data-parent="701" data-card="node-707" style="grid-row: 2; grid-column: 3;" aria-label="Poisoned Daggers, passive"><img src="assets/img/icons/trees/PoisonedDaggers.png" alt="" loading="lazy"><span class="name">Poisoned Daggers</span><span class="gate">Mid</span></button>
+          <button class="node skill" data-id="703" data-parent="702" data-card="node-703" style="grid-row: 3; grid-column: 1;" aria-label="Disengage, skill"><img src="assets/img/icons/skills/Disengage.png" alt="" loading="lazy"><span class="name">Disengage</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="705" data-parent="702" data-card="node-705" style="grid-row: 3; grid-column: 2;" aria-label="Lingering Shadow, passive"><img src="assets/img/icons/trees/LingeringShadow.png" alt="" loading="lazy"><span class="name">Lingering Shadow</span><span class="gate">Mid</span></button>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card skill" id="node-701"><img src="assets/img/icons/skills/Backstab.png" alt="" loading="lazy"><div><h4>Backstab</h4><div class="badges"><span class="badge">Arc</span><span class="badge">Close range</span></div><p>A short dagger strike that hits far harder from behind, and harder still from Stealth.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card passive" id="node-704"><img src="assets/img/icons/trees/ShadowEdge.png" alt="" loading="lazy"><div><h4>Shadow Edge</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank strengthens Backstab and all your dagger attacks.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card passive" id="node-706"><img src="assets/img/icons/trees/ShadowBlades.png" alt="" loading="lazy"><div><h4>Shadow Blades</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank adds damage while you dual wield.</p><p class="req">Grows from Backstab. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-702"><img src="assets/img/icons/skills/Stealth.png" alt="" loading="lazy"><div><h4>Stealth</h4><div class="badges"><span class="badge">Self</span></div><p>Vanish for a long while. Attacking or being hit reveals you.</p><p class="req">Grows from Backstab. Early in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-707"><img src="assets/img/icons/trees/PoisonedDaggers.png" alt="" loading="lazy"><div><h4>Poisoned Daggers</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Poison</span></div><p>Your dagger hits may poison. The poison ignores defence and stacks on the same monster, and Luck raises the chance.</p><p class="req">Grows from Backstab. Mid in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-703"><img src="assets/img/icons/skills/Disengage.png" alt="" loading="lazy"><div><h4>Disengage</h4><div class="badges"><span class="badge">Self</span><span class="badge">Escape</span></div><p>Monsters chasing you lose interest and ignore you for a few seconds.</p><p class="req">Grows from Stealth. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-705"><img src="assets/img/icons/trees/LingeringShadow.png" alt="" loading="lazy"><div><h4>Lingering Shadow</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank lets Stealth last longer.</p><p class="req">Grows from Stealth. Mid in the tree.</p></div></article>
+        </div>
+      </div>
+      <div class="tab-panel" id="tree-luck" role="tabpanel" aria-labelledby="tab-luck" data-realm="celestial">
+        <div class="tree-head">
+          <img src="assets/img/icons/trees/LadyLuckTree.png" alt="">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Lady Luck</h3>
+            <p style="margin-bottom: 8px;">Fortune favours the bold. Dice, cards and critical hits, plus a nose for treasure.</p>
+            <div class="badges"><span class="badge gold">Scales with Dexterity (daggers), Luck for Card Fan</span></div>
+            <p class="muted" style="margin: 0;"><strong>Unlock:</strong> Read the Lady Luck Tome, sold by Pell in Forest Hamlet. Needs level 10, Luck and Dexterity. A rare and costly tome. Every point you spend here strengthens your dagger attacks, stacking with Way of the Assassin.</p>
+          </div>
+        </div>
+        <div class="tree-map" style="--cols: 4;" aria-label="Lady Luck tree map">
+          <button class="node skill" data-id="801" data-card="node-801" style="grid-row: 1; grid-column: 2;" aria-label="Dice Thrust, skill"><img src="assets/img/icons/skills/DiceThrust.png" alt="" loading="lazy"><span class="name">Dice Thrust</span><span class="gate">Root</span></button>
+          <button class="node passive" data-id="802" data-card="node-802" style="grid-row: 1; grid-column: 3;" aria-label="Lucky Charm, passive"><img src="assets/img/icons/trees/LuckyCharm.png" alt="" loading="lazy"><span class="name">Lucky Charm</span><span class="gate">Root</span></button>
+          <button class="node passive" data-id="803" data-parent="801" data-card="node-803" style="grid-row: 2; grid-column: 1;" aria-label="Loaded Dice, passive"><img src="assets/img/icons/trees/LoadedDice.png" alt="" loading="lazy"><span class="name">Loaded Dice</span><span class="gate">Early</span></button>
+          <button class="node skill" data-id="806" data-parent="801" data-card="node-806" style="grid-row: 2; grid-column: 2;" aria-label="Card Fan, skill"><img src="assets/img/icons/skills/CardFan.png" alt="" loading="lazy"><span class="name">Card Fan</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="804" data-parent="802" data-card="node-804" style="grid-row: 2; grid-column: 3;" aria-label="Fortune&#x27;s Favour, passive"><img src="assets/img/icons/trees/FortunesFavour.png" alt="" loading="lazy"><span class="name">Fortune&#x27;s Favour</span><span class="gate">Early</span></button>
+          <button class="node passive" data-id="805" data-parent="802" data-card="node-805" style="grid-row: 2; grid-column: 4;" aria-label="Treasure Hunter, passive"><img src="assets/img/icons/trees/TreasureHunter.png" alt="" loading="lazy"><span class="name">Treasure Hunter</span><span class="gate">Mid</span></button>
+          <button class="node passive" data-id="807" data-parent="806" data-card="node-807" style="grid-row: 3; grid-column: 2;" aria-label="Quick Shuffle, passive"><img src="assets/img/icons/trees/QuickShuffle.png" alt="" loading="lazy"><span class="name">Quick Shuffle</span><span class="gate">Mid</span></button>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card skill" id="node-801"><img src="assets/img/icons/skills/DiceThrust.png" alt="" loading="lazy"><div><h4>Dice Thrust</h4><div class="badges"><span class="badge">Arc</span><span class="badge">Close range</span></div><p>A dagger thrust that rolls a die. Only a six lands, and a six is always a critical hit. Luck loads the die.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card passive" id="node-802"><img src="assets/img/icons/trees/LuckyCharm.png" alt="" loading="lazy"><div><h4>Lucky Charm</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank raises your Luck.</p><p class="req">Root node, available as soon as the tree is unlocked.</p></div></article>
+          <article class="skill-card passive" id="node-803"><img src="assets/img/icons/trees/LoadedDice.png" alt="" loading="lazy"><div><h4>Loaded Dice</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank makes Dice Thrust hit harder.</p><p class="req">Grows from Dice Thrust. Early in the tree.</p></div></article>
+          <article class="skill-card skill" id="node-806"><img src="assets/img/icons/skills/CardFan.png" alt="" loading="lazy"><div><h4>Card Fan</h4><div class="badges"><span class="badge">Arc</span><span class="badge">Pierces</span></div><p>Fling a fan of cards that slices through every monster in a wide arc. Grows with Luck.</p><p class="req">Grows from Dice Thrust. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-804"><img src="assets/img/icons/trees/FortunesFavour.png" alt="" loading="lazy"><div><h4>Fortune&#x27;s Favour</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank makes your Luck count for more toward critical hits.</p><p class="req">Grows from Lucky Charm. Early in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-805"><img src="assets/img/icons/trees/TreasureHunter.png" alt="" loading="lazy"><div><h4>Treasure Hunter</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank makes your Luck count for more toward rare drops.</p><p class="req">Grows from Lucky Charm. Mid in the tree.</p></div></article>
+          <article class="skill-card passive" id="node-807"><img src="assets/img/icons/trees/QuickShuffle.png" alt="" loading="lazy"><div><h4>Quick Shuffle</h4><div class="badges"><span class="badge demon">Passive</span><span class="badge">Multi-rank</span></div><p>Each rank shortens Card Fan&#x27;s cooldown.</p><p class="req">Grows from Card Fan. Mid in the tree.</p></div></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="mastery">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <p class="eyebrow">Practice makes perfect</p>
+          <h2>Skill mastery</h2>
+          <p>Skills improve the more you use them. Every cast or landed hit earns a skill experience toward the next of ten mastery levels. Each level makes the skill a little cheaper, faster to cast, quicker to come back and stronger.</p>
+        </div>
+        <div class="window reveal">
+          <h3>Hand slots</h3>
+          <p class="muted">Each hand holds <strong>five slots</strong>: ten in total. Put a skill or a potion in each. In VR, hold the grip and roll your wrist to turn that hand's dial, then hold the trigger to charge and release to cast. On PC, keys <kbd>1</kbd> to <kbd>5</kbd> fire the left hand and <kbd>6</kbd> to <kbd>0</kbd> the right. Cooldowns are shared between both hands.</p>
+          <p class="muted" style="margin: 0;">See <a href="builds.html">Builds</a> for example loadouts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <p class="eyebrow">Next</p>
+      <h2>Turn a tree into a build</h2>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-gold" href="builds.html">Example builds</a>
+        <a class="btn btn-ghost" href="gear.html">Gear that fits</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div>
+      <img src="assets/img/brand/wordmark.png" alt="Oath Rift Online" width="520" height="167">
+      <p>A stylised anime VRMMORPG for Meta Quest, PC VR and PC. Swear the oath. Close the rift.</p>
+    </div>
+    <div>
+      <h4>Discover</h4>
+      <ul><li><a href="story.html">Story</a></li><li><a href="world.html">World</a></li><li><a href="bestiary.html">Bestiary</a></li><li><a href="skills.html">Skill Trees</a></li></ul>
+    </div>
+    <div>
+      <h4>Play</h4>
+      <ul><li><a href="builds.html">Builds</a></li><li><a href="gear.html">Gear</a></li><li><a href="guide.html">How to Play</a></li><li><a href="guide.html#faq">FAQ</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Vixen Capital PTY LTD. All rights reserved.</span>
+    <span>Oath Rift Online is in active development. Features and balance may change.</span>
+  </div>
+</div></footer>
+</body>
+</html>
