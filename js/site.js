@@ -133,6 +133,37 @@
     });
   }
 
+  // World map: a continent's outline, pin or picker link shows its profile
+  // and hides the others. Without JavaScript every profile shows and the
+  // links jump to it.
+  var atlas = document.querySelector(".atlas");
+  if (atlas) {
+    var profiles = atlas.querySelectorAll(".continent");
+    var triggers = atlas.querySelectorAll('a[href^="#continent-"]');
+    var showContinent = function (id) {
+      profiles.forEach(function (p) { p.hidden = p.id !== id; });
+      triggers.forEach(function (a) {
+        var on = a.getAttribute("href") === "#" + id;
+        a.classList.toggle("active", on);
+        if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+      });
+    };
+    triggers.forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = a.getAttribute("href").slice(1);
+        showContinent(id);
+        if (history.replaceState) history.replaceState(null, "", "#" + id);
+        var profile = document.getElementById(id);
+        if (profile.getBoundingClientRect().top > window.innerHeight * 0.75) {
+          profile.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" });
+        }
+      });
+    });
+    var start = document.getElementById(location.hash.slice(1));
+    showContinent(start && start.classList.contains("continent") ? start.id : profiles[0].id);
+  }
+
   // Lightbox for manga panels, storyboards and anything marked .zoomable.
   var zoomables = document.querySelectorAll(".manga img, img.zoomable, .set-card .pieces img");
   if (zoomables.length) {
