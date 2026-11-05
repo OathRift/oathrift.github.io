@@ -22,6 +22,7 @@
   <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
   <nav class="nav" id="nav" aria-label="Main">
     <a href="index.html">Home</a>
+    <a href="news.html">News</a>
     <a href="story.html">Story</a>
     <a href="world.html">World</a>
     <a href="bestiary.html">Bestiary</a>
@@ -42,7 +43,7 @@
       <h1>Bestiary</h1>
       <p class="lead">The Rifts have filled the Island's monsters with mana they were never meant to carry. Learn how each one behaves before you raise your blade.</p>
       <div class="toc" style="margin-top: 22px;">
-        <a href="#temperament">Temperaments</a><a href="#bosses">Bosses</a><a href="#codex">All monsters</a><a href="#rift">Rift monsters</a><a href="#tips">Combat tips</a>
+        <a href="#temperament">Temperaments</a><a href="#bosses">Bosses</a><a href="#codex">All monsters</a><a href="#rift">Rift monsters</a><a href="#goblins">Goblin Warrens<span class="version-pill" data-version="0.1.6"></span></a><a href="#tips">Combat tips</a>
       </div>
     </div>
   </section>
@@ -65,7 +66,7 @@
         <span class="mark">精</span>
         <div>
           <h4>Elite monsters</h4>
-          <p>Now and then a monster spawns as an <strong>Elite</strong>. Elites are tougher and hit harder, but give more experience and coins and drop loot more often. Rift bosses are never Elite; they are dangerous enough already.</p>
+          <p>Now and then a monster spawns as an <strong>Elite</strong>. Elites are tougher and hit harder, but give more experience and coins and drop loot more often. Rift bosses are never Elite; they are dangerous enough already. In the Goblin Warrens<span class="version-pill" data-version="0.1.6"></span> every goblin is an Elite, so expect no easy fights.</p>
         </div>
       </div>
     </div>
@@ -113,6 +114,19 @@
           <p style="margin-top: 16px;"><strong>Rewards:</strong> a guaranteed haul of high-rarity loot, a Rift Lord mana core, and the key to the exit portal.</p>
         </div>
       </article>
+
+      <article class="boss reveal" id="goblin-general" data-realm="demon">
+        <div class="art" style="background-image: radial-gradient(closest-side, rgba(176, 103, 255, 0.35), transparent), linear-gradient(160deg, #24104a, #070414);">
+          <img src="assets/img/monsters/goblin-general.png" alt="Goblin General" loading="lazy">
+        </div>
+        <div class="info">
+          <div class="badges"><span class="badge demon">Rift boss</span><span class="badge">Lv 50</span><span class="badge">Goblin Warrens</span></div>
+          <h3 style="font-size: 1.8rem;">The Goblin General <span class="version-pill" data-version="0.1.6"></span></h3>
+          <div class="hpbar" aria-hidden="true"><span></span></div>
+          <p>The master of the Warrens waits in a great cavern at the very bottom. Few have seen him and come back with anything useful to say, so we will not spoil it for you. Bring a full party, your best gear and your wits.</p>
+          <p style="margin-top: 16px;"><strong>Rewards:</strong> a guaranteed haul of high-rarity loot, rare crafting materials, and the key to the exit portal.</p>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -129,6 +143,7 @@
           <button class="chip" data-group="zone" data-value="lowlands" aria-pressed="false">Forest Hamlet lowlands</button>
           <button class="chip" data-group="zone" data-value="capital" aria-pressed="false">Capital wilds</button>
           <button class="chip" data-group="zone" data-value="rift" aria-pressed="false">AntiForest Rift</button>
+          <button class="chip" data-group="zone" data-value="warrens" aria-pressed="false">Goblin Warrens<span class="version-pill" data-version="0.1.6"></span></button>
         </div>
         <div class="filter-group"><span>Temperament</span>
           <button class="chip" data-group="mode" data-value="all" aria-pressed="true">All</button>
@@ -274,6 +289,67 @@
           </div>
         </article>
 
+        <!-- Goblin Warrens -->
+        <article class="card monster reveal" id="goblins" data-zone="warrens" data-mode="threatening">
+          <div class="portrait" data-glyph="幼"><span class="lvl">Lv 50</span><img src="assets/img/monsters/goblin-baby.png" alt="Goblin Baby" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Goblin Baby <span class="version-pill" data-version="0.1.6"></span></h3>
+            <p class="muted">Small, hungry and never alone. They close in from every side.</p>
+            <ul class="attacks"><li><b>Bite</b></li></ul>
+            <div class="meta"><span><b>Found:</b> Goblin Warrens chambers</span><span><b>Drops:</b> coins, crafting materials, recipe books, top-tier gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="warrens" data-mode="threatening">
+          <div class="portrait" data-glyph="斥"><span class="lvl">Lv 50</span><img src="assets/img/monsters/goblin-scout.png" alt="Goblin Scout" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Goblin Scout <span class="version-pill" data-version="0.1.6"></span></h3>
+            <p class="muted">A quick little knife-fighter that closes the distance before you have raised your guard.</p>
+            <ul class="attacks"><li><b>Dagger Flurry</b></li><li><b>Rush</b></li></ul>
+            <div class="meta"><span><b>Found:</b> Goblin Warrens chambers</span><span><b>Drops:</b> coins, crafting materials, recipe books, top-tier gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="warrens" data-mode="threatening">
+          <div class="portrait" data-glyph="戦"><span class="lvl">Lv 50</span><img src="assets/img/monsters/goblin-warrior.png" alt="Goblin Warrior" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Goblin Warrior <span class="version-pill" data-version="0.1.6"></span></h3>
+            <p class="muted">Axe in one hand, shield in the other, and very sure of itself.</p>
+            <ul class="attacks"><li><b>Axe Cleave</b></li><li><b>Shield Shove</b></li></ul>
+            <div class="meta"><span><b>Found:</b> Goblin Warrens chambers</span><span><b>Drops:</b> coins, crafting materials, recipe books, top-tier gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="warrens" data-mode="threatening">
+          <div class="portrait" data-glyph="弓"><span class="lvl">Lv 50</span><img src="assets/img/monsters/goblin-archer.png" alt="Goblin Archer" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Goblin Archer <span class="version-pill" data-version="0.1.6"></span></h3>
+            <p class="muted">Picks you off with a crossbow from across the chamber. Do not stay in the open.</p>
+            <ul class="attacks"><li><b>Crossbow Bolt</b></li><li><b>Bolt Volley</b></li></ul>
+            <div class="meta"><span><b>Found:</b> Goblin Warrens chambers</span><span><b>Drops:</b> coins, crafting materials, recipe books, top-tier gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="warrens" data-mode="threatening">
+          <div class="portrait" data-glyph="呪"><span class="lvl">Lv 50</span><img src="assets/img/monsters/goblin-wizard.png" alt="Goblin Wizard" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Goblin Wizard <span class="version-pill" data-version="0.1.6"></span></h3>
+            <p class="muted">A cave-dwelling hexer who hangs back and curses you from afar. Worth reaching first.</p>
+            <ul class="attacks"><li><b>Hex Bolt</b></li><li><b>Cave Curse</b></li></ul>
+            <div class="meta"><span><b>Found:</b> Goblin Warrens chambers</span><span><b>Drops:</b> coins, crafting materials, recipe books, top-tier gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="warrens" data-mode="threatening">
+          <div class="portrait" data-glyph="将"><span class="lvl">Lv 50</span><span class="badge crimson boss-tag">Boss</span><img src="assets/img/monsters/goblin-general.png" alt="Goblin General" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Goblin General <span class="version-pill" data-version="0.1.6"></span></h3>
+            <p class="muted">The boss of the Warrens. Bring a full party. <a href="#goblin-general">Boss profile</a></p>
+            <div class="meta"><span><b>Found:</b> the cavern at the bottom of the Warrens</span><span><b>Drops:</b> guaranteed high-rarity loot, rare crafting materials</span></div>
+          </div>
+        </article>
+
         <!-- Capital wilds -->
         <article class="card monster reveal" data-zone="capital" data-mode="curious">
           <div class="portrait" data-glyph="栗"><span class="lvl">Lv 20</span><img src="assets/img/monsters/porin.png" alt="Porin" loading="lazy"></div>
@@ -374,11 +450,11 @@
   <div class="footer-grid">
     <div>
       <img src="assets/img/brand/wordmark.png" alt="Oath Rift Online" width="520" height="167">
-      <p>A stylised anime VRMMORPG for Meta Quest, PC VR and PC. Swear the oath. Close the rift.</p>
+      <p>A stylised anime VRMMORPG for PC VR and PC, with standalone Meta Quest coming soon. Swear the oath. Close the rift.</p>
     </div>
     <div>
       <h4>Discover</h4>
-      <ul><li><a href="story.html">Story</a></li><li><a href="world.html">World</a></li><li><a href="bestiary.html">Bestiary</a></li><li><a href="skills.html">Skill Trees</a></li></ul>
+      <ul><li><a href="news.html">News</a></li><li><a href="story.html">Story</a></li><li><a href="world.html">World</a></li><li><a href="bestiary.html">Bestiary</a></li><li><a href="skills.html">Skill Trees</a></li></ul>
     </div>
     <div>
       <h4>Play</h4>

@@ -22,6 +22,7 @@
   <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
   <nav class="nav" id="nav" aria-label="Main">
     <a href="index.html">Home</a>
+    <a href="news.html">News</a>
     <a href="story.html">Story</a>
     <a href="world.html">World</a>
     <a href="bestiary.html">Bestiary</a>
@@ -41,7 +42,7 @@
       <p class="eyebrow">Armoury</p>
       <h1>Gear</h1>
       <p class="lead">Weapons, shields, armour sets, jewellery, potions and the crafts that improve them. Every item asks for a level and an attribute, and the finest ask for dedication to a skill tree.</p>
-      <div class="toc" style="margin-top: 22px;"><a href="#rarity">Rarity</a><a href="#weapons">Weapons</a><a href="#armour">Armour sets</a><a href="#accessories">Accessories</a><a href="#consumables">Potions and elixirs</a><a href="#crafting">Fusing and alchemy</a></div>
+      <div class="toc" style="margin-top: 22px;"><a href="#rarity">Rarity</a><a href="#weapons">Weapons</a><a href="#armour">Armour sets</a><a href="#accessories">Accessories</a><a href="#consumables">Potions and food</a><a href="#crafting">Crafting<span class="version-pill" data-version="0.1.6"></span></a><a href="#fusing">Fusing and alchemy</a></div>
     </div>
   </section>
 
@@ -62,7 +63,7 @@
         <div class="rarity" style="--c: var(--r-legendary);">Legendary<small>A golden blaze</small></div>
         <div class="rarity mythic"><span>Mythic</span><small>Shifting rainbow light</small></div>
       </div>
-      <p class="center muted reveal" style="margin-top: 18px;">Items can also carry a <em>+</em> level, either from the drop or from <a href="#crafting">fusing</a>. Each <em>+</em> makes the item stronger.</p>
+      <p class="center muted reveal" style="margin-top: 18px;">Items can also carry a <em>+</em> level, either from the drop or from <a href="#fusing">fusing</a>. Each <em>+</em> makes the item stronger.</p>
     </div>
   </section>
 
@@ -153,19 +154,44 @@
     <div class="container">
       <div class="section-head center reveal">
         <p class="eyebrow">Drink up</p>
-        <h2>Potions and elixirs</h2>
+        <h2>Potions, food and elixirs</h2>
         <p class="lead">Any consumable can sit in a hand slot, ready to drink mid-fight.</p>
         <div class="divider"><span></span></div>
       </div>
       <div class="grid grid-3">
         <div class="window reveal"><h3>Health potions</h3><p class="muted">Small, Medium, Large and Greater. Sold by Pell and Isolde.</p><div class="item-row"><img src="assets/img/icons/items/SmallHealthPotion.png" alt="Small Health Potion" title="Small Health Potion" loading="lazy"><img src="assets/img/icons/items/MediumHealthPotion.png" alt="Medium Health Potion" title="Medium Health Potion" loading="lazy"><img src="assets/img/icons/items/LargeHealthPotion.png" alt="Large Health Potion" title="Large Health Potion" loading="lazy"><img src="assets/img/icons/items/GreaterHealthPotion.png" alt="Greater Health Potion" title="Greater Health Potion" loading="lazy"></div></div>
         <div class="window reveal"><h3>Mana potions</h3><p class="muted">Small, Medium, Large and Greater. Every caster's best friend.</p><div class="item-row"><img src="assets/img/icons/items/SmallManaPotion.png" alt="Small Mana Potion" title="Small Mana Potion" loading="lazy"><img src="assets/img/icons/items/MediumManaPotion.png" alt="Medium Mana Potion" title="Medium Mana Potion" loading="lazy"><img src="assets/img/icons/items/LargeManaPotion.png" alt="Large Mana Potion" title="Large Mana Potion" loading="lazy"><img src="assets/img/icons/items/GreaterManaPotion.png" alt="Greater Mana Potion" title="Greater Mana Potion" loading="lazy"></div></div>
+        <div class="window reveal"><h3>Food <span class="version-pill" data-version="0.1.6"></span></h3><p class="muted">Cooked, never sold. Hearty dishes restore health and mana together, and the rest give a long-lasting boost you can enjoy alongside an elixir.</p><div class="item-row"><img src="assets/img/icons/items/TurnipaStew.png" alt="Turnipa Stew" title="Turnipa Stew" loading="lazy"><img src="assets/img/icons/items/HoneyRoast.png" alt="Honey Roast" title="Honey Roast" loading="lazy"><img src="assets/img/icons/items/HuntersPie.png" alt="Hunter's Pie" title="Hunter's Pie" loading="lazy"><img src="assets/img/icons/items/FeastPlatter.png" alt="Feast Platter" title="Feast Platter" loading="lazy"><img src="assets/img/icons/items/SpicedSkewers.png" alt="Spiced Skewers" title="Spiced Skewers" loading="lazy"><img src="assets/img/icons/items/TrailBread.png" alt="Trail Bread" title="Trail Bread" loading="lazy"><img src="assets/img/icons/items/BoarSteak.png" alt="Boar Steak" title="Boar Steak" loading="lazy"><img src="assets/img/icons/items/CloverSalad.png" alt="Clover Salad" title="Clover Salad" loading="lazy"></div></div>
         <div class="window reveal"><h3>Elixirs</h3><p class="muted">Brewed, never sold. Elixir of Might (Strength), Swiftness Draught (speed), Ironbark Tonic (defence) and Fortune Elixir (Luck).</p><div class="item-row"><img src="assets/img/icons/items/ElixirOfMight.png" alt="Elixir of Might" title="Elixir of Might" loading="lazy"><img src="assets/img/icons/items/SwiftnessDraught.png" alt="Swiftness Draught" title="Swiftness Draught" loading="lazy"><img src="assets/img/icons/items/IronbarkTonic.png" alt="Ironbark Tonic" title="Ironbark Tonic" loading="lazy"><img src="assets/img/icons/items/FortuneElixir.png" alt="Fortune Elixir" title="Fortune Elixir" loading="lazy"></div></div>
       </div>
     </div>
   </section>
 
   <section class="section section-alt" id="crafting">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Make it yourself</p>
+        <h2>Crafting <span class="version-pill" data-version="0.1.6"></span></h2>
+        <p class="lead">Five crafts, each with its own level to raise. Crafted gear rolls its own rarity, and the more skilled you are, the better your chances.</p>
+        <div class="divider"><span></span></div>
+      </div>
+      <div class="grid grid-3">
+        <div class="window reveal"><h3>Alchemy</h3><p class="muted">Potions and elixirs. Taught by Isolde in the Capital.</p><div class="item-row"><img src="assets/img/icons/items/BookAlchemy.png" alt="Alchemy recipe book" title="Alchemy recipe book" loading="lazy"></div></div>
+        <div class="window reveal"><h3>Cooking</h3><p class="muted">Meals that restore you or give a long-lasting boost. Taught by Bertram at the Adventurers' Guild.</p><div class="item-row"><img src="assets/img/icons/items/BookCooking.png" alt="Cooking recipe book" title="Cooking recipe book" loading="lazy"></div></div>
+        <div class="window reveal"><h3>Blacksmithing</h3><p class="muted">Swords, daggers, axes, shields, chain and plate armour, rings and necklaces. Taught by Dunstan in the Capital.</p><div class="item-row"><img src="assets/img/icons/items/BookBlacksmithing.png" alt="Blacksmithing recipe book" title="Blacksmithing recipe book" loading="lazy"></div></div>
+        <div class="window reveal"><h3>Woodcraft</h3><p class="muted">Bows and staves. Taught by Aldwyn, the Master Bowyer.</p><div class="item-row"><img src="assets/img/icons/items/BookWoodcraft.png" alt="Woodcraft recipe book" title="Woodcraft recipe book" loading="lazy"></div></div>
+        <div class="window reveal"><h3>Tailoring</h3><p class="muted">Cloth and leather armour. Taught by Rosalind, the Master Tailor.</p><div class="item-row"><img src="assets/img/icons/items/BookTailoring.png" alt="Tailoring recipe book" title="Tailoring recipe book" loading="lazy"></div></div>
+        <div class="window reveal"><h3>Recipe books</h3><p class="muted">You start each craft with a recipe or two. Garrick and Pell sell the early books, masters teach further, and the finest recipes only drop from monsters.</p></div>
+      </div>
+      <div class="frame reveal" style="margin-top: 26px;">
+        <h3>Materials</h3>
+        <p>Iron Ore, Ashwood and Flax can be gathered in the wild, and the basics are sold in town. Everything better has to be taken from monsters, and the rarest only from the strongest of them.</p>
+        <div class="item-row"><img src="assets/img/icons/items/IronOre.png" alt="Iron Ore" title="Iron Ore" loading="lazy"><img src="assets/img/icons/items/DarksteelOre.png" alt="Darksteel Ore" title="Darksteel Ore" loading="lazy"><img src="assets/img/icons/items/StarmetalOre.png" alt="Starmetal Ore" title="Starmetal Ore" loading="lazy"><img src="assets/img/icons/items/Ashwood.png" alt="Ashwood" title="Ashwood" loading="lazy"><img src="assets/img/icons/items/YewHeartwood.png" alt="Yew Heartwood" title="Yew Heartwood" loading="lazy"><img src="assets/img/icons/items/Moonwood.png" alt="Moonwood" title="Moonwood" loading="lazy"><img src="assets/img/icons/items/Flax.png" alt="Flax" title="Flax" loading="lazy"><img src="assets/img/icons/items/SilkThread.png" alt="Silk Thread" title="Silk Thread" loading="lazy"><img src="assets/img/icons/items/Moonweave.png" alt="Moonweave" title="Moonweave" loading="lazy"><img src="assets/img/icons/items/Rawhide.png" alt="Rawhide" title="Rawhide" loading="lazy"><img src="assets/img/icons/items/BoarHide.png" alt="Boar Hide" title="Boar Hide" loading="lazy"><img src="assets/img/icons/items/DrakeScale.png" alt="Drake Scale" title="Drake Scale" loading="lazy"><img src="assets/img/icons/items/RawMeat.png" alt="Raw Meat" title="Raw Meat" loading="lazy"><img src="assets/img/icons/items/PrimeCut.png" alt="Prime Cut" title="Prime Cut" loading="lazy"><img src="assets/img/icons/items/CookingHerbs.png" alt="Cooking Herbs" title="Cooking Herbs" loading="lazy"><img src="assets/img/icons/items/Sinew.png" alt="Sinew" title="Sinew" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fusing">
     <div class="container">
       <div class="grid grid-2">
         <div class="frame reveal">
@@ -178,8 +204,8 @@
           <h3>Fusing</h3>
           <p>Fuse an item with a copy of itself to raise its <em>+</em> level. The first steps are safe; the higher you go, the lower the odds. Win or lose, the copy is consumed, so fuse spare drops, not treasures.</p>
           <h3 style="margin-top: 22px;">Skill tomes</h3>
-          <p class="muted">Tomes unlock skill trees or reset your choices. Garrick and Pell sell them, and monsters very rarely drop them.</p>
-          <div class="item-row"><img src="assets/img/icons/items/HeavyKnightTome.png" alt="Heavy Knight Tome" title="Heavy Knight Tome" loading="lazy"><img src="assets/img/icons/items/HolyTome.png" alt="Holy Tome" title="Holy Tome" loading="lazy"><img src="assets/img/icons/items/DrainingFangTome.png" alt="Draining Fang Tome" title="Draining Fang Tome" loading="lazy"><img src="assets/img/icons/items/AssassinTome.png" alt="Assassin Tome" title="Assassin Tome" loading="lazy"><img src="assets/img/icons/items/LadyLuckTome.png" alt="Lady Luck Tome" title="Lady Luck Tome" loading="lazy"><img src="assets/img/icons/items/TomeOfForgetting.png" alt="Tome of Forgetting" title="Tome of Forgetting" loading="lazy"><img src="assets/img/icons/items/TomeOfRenewal.png" alt="Tome of Renewal" title="Tome of Renewal" loading="lazy"></div>
+          <p class="muted">Tomes unlock skill trees or reset your choices, and the Axeman Tome<span class="version-pill" data-version="0.1.6"></span> is the newest of them. Garrick and Pell sell them, and monsters very rarely drop them.</p>
+          <div class="item-row"><img src="assets/img/icons/items/HeavyKnightTome.png" alt="Heavy Knight Tome" title="Heavy Knight Tome" loading="lazy"><img src="assets/img/icons/items/HolyTome.png" alt="Holy Tome" title="Holy Tome" loading="lazy"><img src="assets/img/icons/items/DrainingFangTome.png" alt="Draining Fang Tome" title="Draining Fang Tome" loading="lazy"><img src="assets/img/icons/items/AssassinTome.png" alt="Assassin Tome" title="Assassin Tome" loading="lazy"><img src="assets/img/icons/items/AxemanTome.png" alt="Axeman Tome" title="Axeman Tome" loading="lazy"><img src="assets/img/icons/items/LadyLuckTome.png" alt="Lady Luck Tome" title="Lady Luck Tome" loading="lazy"><img src="assets/img/icons/items/TomeOfForgetting.png" alt="Tome of Forgetting" title="Tome of Forgetting" loading="lazy"><img src="assets/img/icons/items/TomeOfRenewal.png" alt="Tome of Renewal" title="Tome of Renewal" loading="lazy"></div>
         </div>
       </div>
     </div>
@@ -201,11 +227,11 @@
   <div class="footer-grid">
     <div>
       <img src="assets/img/brand/wordmark.png" alt="Oath Rift Online" width="520" height="167">
-      <p>A stylised anime VRMMORPG for Meta Quest, PC VR and PC. Swear the oath. Close the rift.</p>
+      <p>A stylised anime VRMMORPG for PC VR and PC, with standalone Meta Quest coming soon. Swear the oath. Close the rift.</p>
     </div>
     <div>
       <h4>Discover</h4>
-      <ul><li><a href="story.html">Story</a></li><li><a href="world.html">World</a></li><li><a href="bestiary.html">Bestiary</a></li><li><a href="skills.html">Skill Trees</a></li></ul>
+      <ul><li><a href="news.html">News</a></li><li><a href="story.html">Story</a></li><li><a href="world.html">World</a></li><li><a href="bestiary.html">Bestiary</a></li><li><a href="skills.html">Skill Trees</a></li></ul>
     </div>
     <div>
       <h4>Play</h4>

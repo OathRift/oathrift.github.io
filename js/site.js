@@ -19,9 +19,57 @@
 
   // Active nav link.
   var page = location.pathname.split("/").pop() || "index.html";
+  var inNews = /\/news(\.html|\/)/.test(location.pathname);
   document.querySelectorAll(".nav a[href]").forEach(function (a) {
-    if (a.getAttribute("href") === page) a.setAttribute("aria-current", "page");
+    var href = a.getAttribute("href");
+    if (href === page || (inNews && /news\.html$/.test(href))) a.setAttribute("aria-current", "page");
   });
+
+  // The next release: the banner counts down to it, and until then <html> carries
+  // data-upcoming so css/site.css shows that version's pills (hidden otherwise).
+  var RELEASE = {
+    version: "0.1.6",
+    at: Date.parse("2026-11-06T07:00:00+08:00"),
+    when: "6 November, 7am AWST",
+    announcement: "/news/announcement-0.1.6.html",
+    released: "/news/patch-notes.html"
+  };
+  if (Date.now() < RELEASE.at) doc.setAttribute("data-upcoming", RELEASE.version);
+  var siteHeader = document.querySelector(".site-header");
+  if (siteHeader) {
+    var banner = document.createElement("aside");
+    banner.className = "release-banner";
+    banner.setAttribute("aria-label", "Version " + RELEASE.version + " release");
+    banner.innerHTML = '<a class="container" href="' + RELEASE.announcement + '">' +
+      '<span class="release-title">Version ' + RELEASE.version + ' arrives in</span>' +
+      '<span class="release-count" role="timer">' +
+      '<span><b data-unit="d">00</b>d</span><span><b data-unit="h">00</b>h</span>' +
+      '<span><b data-unit="m">00</b>m</span><span><b data-unit="s">00</b>s</span></span>' +
+      '<span class="release-when">' + RELEASE.when + '</span></a>';
+    siteHeader.parentNode.insertBefore(banner, siteHeader);
+    var units = {};
+    banner.querySelectorAll("[data-unit]").forEach(function (b) { units[b.getAttribute("data-unit")] = b; });
+    var pad = function (n) { return (n < 10 ? "0" : "") + n; };
+    var countdown;
+    var tickRelease = function () {
+      var left = Math.ceil((RELEASE.at - Date.now()) / 1000);
+      if (left <= 0) {
+        clearInterval(countdown);
+        doc.removeAttribute("data-upcoming");
+        banner.classList.add("released");
+        banner.querySelector("a").setAttribute("href", RELEASE.released);
+        banner.querySelector(".release-title").textContent = "Version " + RELEASE.version + " is now being released";
+        banner.querySelector(".release-when").textContent = "Read the patch notes";
+        return;
+      }
+      units.d.textContent = pad(Math.floor(left / 86400));
+      units.h.textContent = pad(Math.floor(left / 3600) % 24);
+      units.m.textContent = pad(Math.floor(left / 60) % 60);
+      units.s.textContent = pad(left % 60);
+    };
+    countdown = setInterval(tickRelease, 1000);
+    tickRelease();
+  }
 
   // Mobile nav.
   var toggle = document.querySelector(".nav-toggle");

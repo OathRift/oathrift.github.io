@@ -22,6 +22,7 @@
   <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
   <nav class="nav" id="nav" aria-label="Main">
     <a href="index.html">Home</a>
+    <a href="news.html">News</a>
     <a href="story.html">Story</a>
     <a href="world.html">World</a>
     <a href="bestiary.html">Bestiary</a>
@@ -42,7 +43,7 @@
       <h1>The World</h1>
       <p class="lead">Three continents are charted so far: the Island, where every adventure begins, the wild beastfolk lands of Wildmane, and the ancient elven forests of Elvenwood.</p>
       <div class="toc" style="margin-top: 22px;">
-        <a href="#atlas">World map</a><a href="#map">The Island</a><a href="#places">Places</a><a href="#rift">The AntiForest</a><a href="#services">Who to visit</a><a href="#elvenwood">Elvenwood</a><a href="#wildmane">Wildmane</a>
+        <a href="#atlas">World map</a><a href="#map">The Island</a><a href="#places">Places</a><a href="#rift">The AntiForest</a><a href="#goblin-warrens">The Goblin Warrens<span class="version-pill" data-version="0.1.6"></span></a><a href="#services">Who to visit</a><a href="#elvenwood">Elvenwood</a><a href="#wildmane">Wildmane</a>
       </div>
     </div>
   </section>
@@ -81,12 +82,12 @@
             <p class="eyebrow">Human continent</p>
             <h3>The Island</h3>
             <div class="badges"><span class="badge normal">Normal realm</span><span class="badge gold">Open now</span><span class="badge">Lv 1-40</span></div>
-            <p>Where every oath begins. A green, welcoming land of beaches, meadows and forest, ruled from a royal capital at its heart. Something is wrong here all the same: a Rift has opened on the southern plains, and the monsters grow bolder each season.</p>
+            <p>Where every oath begins. A green, welcoming land of beaches, meadows and forest, ruled from a royal capital at its heart. Something is wrong here all the same: Rifts have opened on the southern plains and beyond the Mountain Outpost, and the monsters grow bolder each season.</p>
             <dl class="facts">
               <div><dt>People</dt><dd>Humans, in every town from the royal Capital to the fishing village on the bay</dd></div>
               <div><dt>Lands</dt><dd>Sandy beaches, open meadows and patchy woods, a ring of sheer mesas around the western wilds, and a river running from the snowy Eastern Peaks down to a lake and out to sea</dd></div>
               <div><dt>Places</dt><dd>Forest Hamlet, the Capital, Fishing Town, the Mountain Outpost and the summit of the Eastern Peaks</dd></div>
-              <div><dt>Danger</dt><dd>The Rift into the AntiForest, a party dungeon in the Demon Realm</dd></div>
+              <div><dt>Danger</dt><dd>Two Rifts into the Demon Realm: the AntiForest and the Goblin Warrens<span class="version-pill" data-version="0.1.6"></span>, both party dungeons</dd></div>
             </dl>
             <a class="btn btn-gold btn-sm" href="#map">Explore the Island</a>
           </div>
@@ -140,7 +141,8 @@
             <a class="hotspot" href="#fishing" style="--x: 58.8%; --y: 84.4%;"><span class="label">Fishing Town</span></a>
             <a class="hotspot" href="#outpost" style="--x: 62.7%; --y: 27.5%;"><span class="label">Mountain Outpost</span></a>
             <a class="hotspot peak" href="#peaks" style="--x: 74%; --y: 22%;"><span class="label">Eastern Peaks</span></a>
-            <a class="hotspot rift" href="#rift" style="--x: 74.8%; --y: 73.8%;"><span class="label">The Rift</span></a>
+            <a class="hotspot rift" href="#rift" style="--x: 74.8%; --y: 73.8%;"><span class="label">AntiForest Rift</span></a>
+            <a class="hotspot rift pin-start" href="#goblin-warrens" style="--x: 63.7%; --y: 32%;"><span class="label">Goblin Warrens</span></a>
           </div>
           <div class="legend">
             <span>Town</span>
@@ -155,7 +157,7 @@
           <p>New adventurers arrive at <strong>Forest Hamlet</strong> in the east, where the gentlest monsters roam. As you grow stronger, the road west leads to the <strong>Capital</strong> and the fiercer beasts of its wilds.</p>
           <div class="callout" style="margin-top: 18px;">
             <span class="mark">道</span>
-            <div><p><strong>Suggested route.</strong> Forest Hamlet fields and forest, then the Planta camps, then the Rift with a party, then the Capital wilds.</p></div>
+            <div><p><strong>Suggested route.</strong> Forest Hamlet fields and forest, then the Planta camps, then the Rift with a party, then the Capital wilds. Veterans can test themselves in the Goblin Warrens<span class="version-pill" data-version="0.1.6"></span>.</p></div>
           </div>
           <p class="muted" style="margin-top: 16px;">In VR, turn your left palm toward your face for a quick map. On PC it lives in the main menu.</p>
         </div>
@@ -196,8 +198,11 @@
             <ul class="services">
               <li><b>King Aldric IV</b><span>Holds court in the royal castle</span></li>
               <li><b>Benedict, High Priest</b><span>Heals in the Cathedral of the Dawn</span></li>
-              <li><b>Isolde, Potions Master</b><span>Health and mana potions of every size</span></li>
-              <li><b>Roderick, Guild Master</b><span>The Adventurers' Guild, with Wren and Bertram</span></li>
+              <li><b>Isolde, Potions Master</b><span>Health and mana potions of every size, and a teacher of Alchemy</span></li>
+              <li><b>Dunstan, Smith</b><span>Teaches Blacksmithing<span class="version-pill" data-version="0.1.6"></span></span></li>
+              <li><b>Aldwyn, Master Bowyer</b><span>Teaches Woodcraft<span class="version-pill" data-version="0.1.6"></span></span></li>
+              <li><b>Rosalind, Master Tailor</b><span>Teaches Tailoring<span class="version-pill" data-version="0.1.6"></span></span></li>
+              <li><b>Roderick, Guild Master</b><span>The Adventurers' Guild, with Wren, and Bertram the Guild Cook, who teaches Cooking<span class="version-pill" data-version="0.1.6"></span></span></li>
               <li><b>Meridian, Grand Wizard</b><span>The Magic Institute, with Ophelia in the library</span></li>
               <li><b>Brenna, Captain</b><span>The barracks, with Gorran and Petra</span></li>
             </ul>
@@ -244,7 +249,7 @@
           <figure class="manga" style="--cols: 2; margin: 0;">
             <img class="wide zoomable" src="assets/img/world/antiforest-1.jpg" alt="The AntiForest at night" loading="lazy">
             <img class="zoomable" src="assets/img/world/antiforest-2.jpg" alt="An encounter clearing" loading="lazy">
-            <img class="zoomable" src="assets/img/world/rift-portal.jpg" alt="The Rift portal on the Island" loading="lazy">
+            <img class="zoomable" src="assets/img/world/rift-portal.jpg" alt="A Rift portal" loading="lazy">
           </figure>
         </div>
         <div class="reveal">
@@ -266,6 +271,36 @@
     </div>
   </section>
 
+  <section class="section" id="goblin-warrens" data-realm="demon">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <p class="eyebrow">Demon Realm</p>
+          <h2>The Goblin Warrens <span class="version-pill" data-version="0.1.6"></span></h2>
+          <div class="badges"><span class="badge demon">Party dungeon</span><span class="badge">Lv 50</span><span class="badge crimson">Boss: Goblin General</span></div>
+          <p>Just east of the Mountain Outpost, on the way to the caves of the Eastern Peaks, a second Rift has torn open. Step through and you are underground in the Demon Realm: no sky and no sun, only ore veins and crystal lighting a warren that winds ever deeper, chamber by chamber, from the Ore Gallery and the Nursery to the Crystal Hall and the War Camp.</p>
+          <ul>
+            <li>Every party, or solo adventurer, gets its own private run.</li>
+            <li>Every goblin here is level 50 and always an Elite. This is a place for veterans, and it is better with friends.</li>
+            <li>Inside a run, defeated monsters stay defeated.</li>
+            <li>The exit portal stays sealed until the Goblin General falls in the cavern at the bottom.</li>
+            <li>Fall in battle and you rise again at the Rift's start, still inside your run.</li>
+            <li>Goblins carry some of the finest gear and rarest crafting materials in the land.</li>
+            <li>Log out inside and you return to the portal on the Island next time.</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="bestiary.html#goblins">Goblins of the Warrens</a>
+        </div>
+        <div class="reveal">
+          <figure class="manga" style="--cols: 2; margin: 0;">
+            <img class="wide zoomable" src="assets/img/world/goblin-warrens-1.jpg" alt="Deep inside the Goblin Warrens" loading="lazy">
+            <img class="zoomable" src="assets/img/world/goblin-warrens-2.jpg" alt="A goblin chamber lit by crystal" loading="lazy">
+            <img class="zoomable" src="assets/img/world/goblin-warrens-3.jpg" alt="Tunnels winding deeper underground" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-alt" id="services">
     <div class="container">
       <div class="section-head center reveal">
@@ -281,7 +316,8 @@
             <tr><td>Buy a weapon or heavy armour</td><td>Garrick, Blacksmith</td><td>Forest Hamlet</td></tr>
             <tr><td>Buy cloth armour, potions or jewellery</td><td>Pell, Shopkeeper</td><td>Forest Hamlet</td></tr>
             <tr><td>Buy potions in the city</td><td>Isolde, Potions Master</td><td>The Capital</td></tr>
-            <tr><td>Unlock Heavy Knight or Way of the Assassin</td><td>Garrick sells the tome</td><td>Forest Hamlet</td></tr>
+            <tr><td>Unlock Heavy Knight, Way of the Assassin or Axeman<span class="version-pill" data-version="0.1.6"></span></td><td>Garrick sells the tome</td><td>Forest Hamlet</td></tr>
+            <tr><td>Learn a craft<span class="version-pill" data-version="0.1.6"></span></td><td>Isolde (Alchemy), Bertram (Cooking), Dunstan (Blacksmithing), Aldwyn (Woodcraft), Rosalind (Tailoring)</td><td>The Capital</td></tr>
             <tr><td>Unlock Holy, Draining Fang or Lady Luck</td><td>Pell sells the tome</td><td>Forest Hamlet</td></tr>
             <tr><td>Reset tree points or attributes</td><td>Pell sells the Tomes of Forgetting and Renewal</td><td>Forest Hamlet</td></tr>
             <tr><td>Heal up</td><td>Elin, or Benedict the High Priest</td><td>Forest Hamlet, Capital cathedral</td></tr>
@@ -347,11 +383,11 @@
   <div class="footer-grid">
     <div>
       <img src="assets/img/brand/wordmark.png" alt="Oath Rift Online" width="520" height="167">
-      <p>A stylised anime VRMMORPG for Meta Quest, PC VR and PC. Swear the oath. Close the rift.</p>
+      <p>A stylised anime VRMMORPG for PC VR and PC, with standalone Meta Quest coming soon. Swear the oath. Close the rift.</p>
     </div>
     <div>
       <h4>Discover</h4>
-      <ul><li><a href="story.html">Story</a></li><li><a href="world.html">World</a></li><li><a href="bestiary.html">Bestiary</a></li><li><a href="skills.html">Skill Trees</a></li></ul>
+      <ul><li><a href="news.html">News</a></li><li><a href="story.html">Story</a></li><li><a href="world.html">World</a></li><li><a href="bestiary.html">Bestiary</a></li><li><a href="skills.html">Skill Trees</a></li></ul>
     </div>
     <div>
       <h4>Play</h4>
