@@ -58,7 +58,7 @@
         doc.removeAttribute("data-upcoming");
         banner.classList.add("released");
         banner.querySelector("a").setAttribute("href", RELEASE.released);
-        banner.querySelector(".release-title").textContent = "Version " + RELEASE.version + " is now being released";
+        banner.querySelector(".release-title").textContent = "Current Version: " + RELEASE.version;
         banner.querySelector(".release-when").textContent = "Read the patch notes";
         return;
       }
