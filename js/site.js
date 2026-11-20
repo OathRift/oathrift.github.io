@@ -28,10 +28,10 @@
   // The next release: the banner counts down to it, and until then <html> carries
   // data-upcoming so css/site.css shows that version's pills (hidden otherwise).
   var RELEASE = {
-    version: "0.1.6",
-    at: Date.parse("2026-11-06T07:00:00+08:00"),
-    when: "6 November, 7am AWST",
-    announcement: "/news/announcement-0.1.6.html",
+    version: "0.1.7",
+    at: Date.parse("2026-11-20T07:00:00+08:00"),
+    when: "20 November, 7am AWST",
+    announcement: "/news/patch-0.1.7.html",
     released: "/news/patch-notes.html"
   };
   if (Date.now() < RELEASE.at) doc.setAttribute("data-upcoming", RELEASE.version);

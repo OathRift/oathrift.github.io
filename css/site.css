@@ -803,6 +803,7 @@ kbd {
 }
 .version-pill::before { content: attr(data-version); }
 html[data-upcoming="0.1.6"] .version-pill[data-version="0.1.6"] { display: inline-flex; }
+html[data-upcoming="0.1.7"] .version-pill[data-version="0.1.7"] { display: inline-flex; }
 .node .version-pill { position: absolute; top: -8px; left: calc(50% + 12px); margin: 0; padding: 0 6px; font-size: 0.62rem; }
 
 /* ---------- News ---------- */

@@ -41,9 +41,9 @@
     <div class="container">
       <p class="eyebrow">Monster codex</p>
       <h1>Bestiary</h1>
-      <p class="lead">The Rifts have filled the Island's monsters with mana they were never meant to carry. Learn how each one behaves before you raise your blade.</p>
+      <p class="lead">The Rifts have filled Vraethon's monsters with mana they were never meant to carry. Learn how each one behaves before you raise your blade.</p>
       <div class="toc" style="margin-top: 22px;">
-        <a href="#temperament">Temperaments</a><a href="#bosses">Bosses</a><a href="#codex">All monsters</a><a href="#rift">Rift monsters</a><a href="#goblins">Goblin Warrens<span class="version-pill" data-version="0.1.6"></span></a><a href="#tips">Combat tips</a>
+        <a href="#temperament">Temperaments</a><a href="#bosses">Bosses</a><a href="#codex">All monsters</a><a href="#rift">Rift monsters</a><a href="#goblins">Goblin Warrens<span class="version-pill" data-version="0.1.6"></span></a><a href="#sea">Sea monsters<span class="version-pill" data-version="0.1.7"></span></a><a href="#tips">Combat tips</a>
       </div>
     </div>
   </section>
@@ -144,6 +144,7 @@
           <button class="chip" data-group="zone" data-value="capital" aria-pressed="false">Capital wilds</button>
           <button class="chip" data-group="zone" data-value="rift" aria-pressed="false">AntiForest Rift</button>
           <button class="chip" data-group="zone" data-value="warrens" aria-pressed="false">Goblin Warrens<span class="version-pill" data-version="0.1.6"></span></button>
+          <button class="chip" data-group="zone" data-value="sea" aria-pressed="false">Southern coast<span class="version-pill" data-version="0.1.7"></span></button>
         </div>
         <div class="filter-group"><span>Temperament</span>
           <button class="chip" data-group="mode" data-value="all" aria-pressed="true">All</button>
@@ -406,9 +407,51 @@
           <div class="card-body" style="display: flex; flex-direction: column;">
             <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
             <h3>Torren Snail</h3>
-            <p class="muted">The most dangerous thing on the Island today. Armoured, aggressive, and it throws rocks.</p>
+            <p class="muted">The most dangerous thing in the Capital wilds. Armoured, aggressive, and it throws rocks.</p>
             <ul class="attacks"><li><b>Shell Slam</b></li><li><b>Rock Throw</b>, three rocks after a quick wind-up</li></ul>
             <div class="meta"><span><b>Found:</b> the outermost Capital wilds</span><span><b>Drops:</b> coins, herbs, gear</span></div>
+          </div>
+        </article>
+
+        <!-- Southern coast -->
+        <article class="card monster reveal" id="sea" data-zone="sea" data-mode="threatening">
+          <div class="portrait" data-glyph="蟹"><span class="lvl">Lv 32</span><img src="assets/img/monsters/red-crab.png" alt="Red Crab" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <h3>Red Crab <span class="version-pill" data-version="0.1.7"></span></h3>
+            <p class="muted">Scuttles up the beach faster than you would think and pinches hard. Mind its claws when it squares up to you.</p>
+            <ul class="attacks"><li><b>Pinch</b></li><li><b>Claw Sweep</b>, both claws across its front, knocking you back</li></ul>
+            <div class="meta"><span><b>Found:</b> the beaches around the Fishing Town</span><span><b>Drops:</b> Crab Shell, coins, crafting materials, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="sea" data-mode="threatening">
+          <div class="portrait" data-glyph="蟹"><span class="lvl">Lv 35</span><img src="assets/img/monsters/blue-crab.png" alt="Blue Crab" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <h3>Blue Crab <span class="version-pill" data-version="0.1.7"></span></h3>
+            <p class="muted">The rarer, tougher crab in every group. Back off and it spits bubbles at you instead.</p>
+            <ul class="attacks"><li><b>Pinch</b></li><li><b>Claw Sweep</b></li><li><b>Bubble Spit</b>, a bubble fired from range</li></ul>
+            <div class="meta"><span><b>Found:</b> with the Red Crabs around the Fishing Town</span><span><b>Drops:</b> Crab Shell, Sea Pearl (rare), coins, crafting materials, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="sea" data-mode="threatening">
+          <div class="portrait" data-glyph="蛸"><span class="lvl">Lv 37</span><img src="assets/img/monsters/octopus.png" alt="Octopus" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Octopus <span class="version-pill" data-version="0.1.7"></span></h3>
+            <p class="muted">Slaps you up close and inks you from afar, so there is nowhere comfortable to stand.</p>
+            <ul class="attacks"><li><b>Tentacle Slap</b></li><li><b>Ink Shot</b>, a ranged blob of ink</li></ul>
+            <div class="meta"><span><b>Found:</b> further along the south coast</span><span><b>Drops:</b> Octopus Ink, coins, crafting materials, recipe books, gear</span></div>
+          </div>
+        </article>
+        <article class="card monster reveal" data-zone="sea" data-mode="threatening">
+          <div class="portrait" data-glyph="蛸"><span class="lvl">Lv 40</span><img src="assets/img/monsters/octofem.png" alt="Octofem" loading="lazy"></div>
+          <div class="card-body" style="display: flex; flex-direction: column;">
+            <div class="badges"><span class="badge crimson">Threatening</span><span class="threat" role="img" aria-label="Threat 5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <h3>Octofem <span class="version-pill" data-version="0.1.7"></span></h3>
+            <p class="muted">The strongest thing on the coast and one of the toughest on Vraethon. Bring friends.</p>
+            <ul class="attacks"><li><b>Tentacle Lash</b>, a wide sweep that knocks you back</li><li><b>Whirlpool</b>, a swirl around it that throws everyone back</li><li><b>Ink Barrage</b>, several ink blobs on and around you</li></ul>
+            <div class="meta"><span><b>Found:</b> the far west of the south coast</span><span><b>Drops:</b> Octopus Ink, Sea Pearl, coins, crafting materials, recipe books, gear</span></div>
           </div>
         </article>
       </div>
